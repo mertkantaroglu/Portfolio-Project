@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  flex-direction: column;
+  border: 1px solid blue;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.flex-nav ul {
+  flex-direction: row;
+  flex: 1;
+  width: 500px;
+  display: block;
+  border: 2px solid black;
+}
+
+.title {
+  display: flex;
+}
+
+.social-links {
+  flex-direction: row;
+}
+
+.fa-twitter {
+  color: rgb(68, 68, 68);
+}
+
+.fa-linkedin {
+  color: rgb(68, 68, 68);
+}
+
+.fa-medium {
+  color: rgb(68, 68, 68);
+}
+
+.fa-github {
+  color: rgb(68, 68, 68);
+}
+
+.fa-angellist {
+  color: rgb(68, 68, 68);
+}
