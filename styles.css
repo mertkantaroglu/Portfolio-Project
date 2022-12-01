@@ -3,15 +3,15 @@
   justify-content: space-between;
   width: 375px;
   height: 100px;
-  left: 0px;
-  top: 0px;
-  background: #FFFFFF;
+  left: 0;
+  top: 0;
+  background: #fff;
 }
 
 .logo {
   width: 76px;
   height: 20px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #6070FF;
+  color: #6070ff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -31,7 +31,7 @@
   width: 18px;
   height: 3px;
   margin: 3px;
-  background-color: #6070FF;
+  background-color: #6070ff;
 }
 
 .main-container {
@@ -48,27 +48,27 @@
 .title {
   width: 327px;
   height: 150px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
   flex: none;
   order: 0;
   flex-grow: 0;
   left: 24px;
   top: 114px;
-
-  
 }
 
 .intro {
   width: 327px;
   height: 146px;
-  font-family: 'Poppins';
+  font-family:
+    'Poppins',
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -82,12 +82,14 @@
 .connect {
   width: 117px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family:
+    'Poppins',
+    sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
   flex: none;
   order: 2;
   flex-grow: 0;
