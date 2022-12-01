@@ -1,48 +1,100 @@
-.wrapper {
-  display: flex;
-  /*flex-wrap: wrap;*/
-  flex-direction: column;
-  border: 1px solid blue;
-}
-
-.flex-nav {
+.header {
   display: flex;
   justify-content: space-between;
+  width: 375px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
   border: 1px solid red;
 }
 
-.flex-nav ul {
-  flex-direction: row;
-  flex: 1;
-  width: 500px;
+.logo {
+  width: 76px;
+  height: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070FF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: 1px solid red;
+}
+
+.navbar {
   display: block;
-  border: 2px solid black;
+  width: 18px;
+  height: 3px;
+  margin: 3px;
+  background-color: #6070FF;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
+  width: 327px;
+  height: 150px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
   display: flex;
+  align-items: center;
+  color: #172B4D;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  left: 24px;
+  top: 114px;
+
+  
 }
 
-.social-links {
-  flex-direction: row;
+.intro {
+  width: 327px;
+  height: 146px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.fa-twitter {
-  color: rgb(68, 68, 68);
+.connect {
+  width: 117px;
+  height: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
-.fa-linkedin {
-  color: rgb(68, 68, 68);
-}
-
-.fa-medium {
-  color: rgb(68, 68, 68);
-}
-
-.fa-github {
-  color: rgb(68, 68, 68);
-}
-
-.fa-angellist {
-  color: rgb(68, 68, 68);
+.social-media-icons {
+  width: 17.17px;
+  height: 20px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
