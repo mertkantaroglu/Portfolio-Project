@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding: 0 10px;
   margin-top: 10px;
 }
 
@@ -74,11 +73,11 @@
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   order: 0;
   flex-grow: 0;
   margin-top: 40px;
-  padding-left: 40px ;
+  padding-left: 40px;
   padding-right: auto;
   text-align: start;
 }
