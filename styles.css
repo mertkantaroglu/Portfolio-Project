@@ -105,10 +105,10 @@
 .social-media-icons {
   height: 20px;
   order: 99;
-  flex-grow: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
+  margin-right: 200px;
 }
 
 .social-media li {
