@@ -5,6 +5,10 @@
   margin-top: 10px;
 }
 
+body {
+  background-image: url('./Images/header-shapes\ mobile.png');
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -37,7 +41,6 @@
 }
 
 .main-container {
-  background-image: url('/Users/mertkantaroglu/Setup-and-mobile-first/Images/header-background-mobile.png');
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
