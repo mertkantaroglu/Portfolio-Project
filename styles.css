@@ -7,6 +7,8 @@
 
 body {
   background-image: url('./Images/header-shapes\ mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
@@ -82,8 +84,7 @@ body {
   flex-grow: 0;
   margin-top: 40px;
   padding-left: 40px;
-  padding-right: auto;
-  text-align: start;
+  padding-right: 30px;
 }
 
 .connect {
@@ -108,8 +109,8 @@ body {
   height: 20px;
   order: 99;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
   margin-right: 200px;
 }
 
