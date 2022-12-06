@@ -221,9 +221,9 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; */
   color: #172B4D;
 }
 
@@ -240,7 +240,6 @@ body {
 }
 
 .about-connect {
-  display: flex;
   height: 24px;
   font-family:'Poppins';
   font-style: normal;
@@ -250,11 +249,69 @@ body {
   color: #7f8cff;
   order: 0;
   text-decoration: none;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border: 1px solid red
 }
 
-.social-media-icons {
-  order: 4;
+.skills {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.skills li {
+  list-style: none;
+}
+
+.dev-container {
+  width: 303px;
+  height: 66.72px;
+  background: #F7F7F9;
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.dev-tools {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  padding-left: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.resume-button {
+  display: flex;
+  margin-top: 50px;
+  align-self: flex-start;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 16px;
+  background: transparent;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  color: #396df2;
+  border-color: #396df2;
+  margin-bottom: 20px;
+}
+
+.end-social-media-icons {
+  height: 20px;
+  order: 99;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-right: 200px;
+}
+
+.dev-icons {
+  margin-right: 20px;
+}
+
+.dev-container li {
+  flex-wrap: wrap;
 }
