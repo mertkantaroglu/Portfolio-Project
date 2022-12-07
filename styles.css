@@ -162,10 +162,18 @@ body {
 }
 
 .project-summary {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   list-style: none;
+}
+
+.canopy {
+  
+  color: #344563;
 }
 
 .back-end-dev {
@@ -176,6 +184,14 @@ body {
   color: #7a869a;
 }
 
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #C1C7D0;
+  order: 1;
+  border-radius: 50%;
+}
+
 .project-details {
   font-style: normal;
   font-weight: 400;
@@ -184,7 +200,10 @@ body {
   color: #344563;
 }
 
-.buttons > * {
+.dev-list > * {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -193,8 +212,11 @@ body {
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
+  border-color: #396df2;
   color: #396df2;
   border: none;
+  list-style: none;
+  text-align: center;
 }
 
 .project-button {
@@ -208,31 +230,30 @@ body {
   border-radius: 16px;
   color: #396df2;
   border-color: #396df2;
+  margin-top: 5px;
 }
 
-.about {
+.about-title {
   background: #fff;
   order: 2;
   width: 327px;
-  height: 101px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 52px;
   color: #172b4d;
+  padding: 0 24px;
 }
 
 .about-detail {
-  width: 327px;
-  height: 144px;
+  padding-right: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  padding-top: 10px;
+  padding: 0 24px;
 }
 
 .about-connect {
@@ -243,40 +264,19 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  order: 0;
+  order: 3;
   text-decoration: none;
+  padding: 0 24px;
 }
 
-.skills {
-  font-size: 20px;
-  line-height: 24px;
-  color: #000;
-}
-
-.skills li {
-  list-style: none;
-}
-
-.dev-container {
-  width: 303px;
-  height: 66.72px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.dev-tools {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-  padding-left: 10px;
-
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+.end-social-media-icons {
+  height: 20px;
+  order: 99;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-right: 200px;
+  padding-left: 24px;
 }
 
 .resume-button {
@@ -288,6 +288,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   padding: 16px;
+  margin-left: 24px;
   background: transparent;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -296,19 +297,81 @@ body {
   margin-bottom: 20px;
 }
 
-.end-social-media-icons {
-  height: 20px;
-  order: 99;
+.language-container {
   display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
-  margin-right: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 327px;
+  height: 0;
+  position: relative;
+  margin: -70px
+}
+
+.dev-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  order: 0;
+  padding-bottom: 20px;
+}
+
+.dev-tools {
+  width: 303px;
+  height: 66.72px;
+  background: #F7F7F9;
+  border-radius: 8px;
 }
 
 .dev-icons {
-  margin-right: 20px;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin-left: 12px;
 }
 
-.dev-container li {
-  flex-wrap: wrap;
+.skills li {
+  list-style: none;
+} 
+
+.lan-list {
+  height: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  order: 0;
+  margin-bottom: 10px;
 }
+
+.about-dev-list {
+  height: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #253858;
+  padding-left: 70px;
+  padding-top: 25px;
+}
+
+.dev-frameworks {
+  order: 1;
+}
+
+.dev-skills {
+  order: 2;
+  margin-bottom: 36px;
+}
+
+
+
