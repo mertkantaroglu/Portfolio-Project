@@ -383,7 +383,7 @@ body {
 
 .contact-title {
   height: 56px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -391,7 +391,8 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
+  margin: 100px 0 24px 75px;
 }
 
 .info {
@@ -403,31 +404,40 @@ body {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
-  margin: 10px 24px 50px 0;
+  color: #ebebff;
+  margin: 10px 24px 60px 24px;
 }
 
 .fieldset {
   margin-top: 50px;
   width: 327px;
   align-content: center;
+  border: none;
 }
 
 .form-input {
-background: #fff;
-color: #172B4D;
-border: 1px solid #CFD8DC;
-border-radius: 8px;
-width: 327px;
-height: 48px;
-display: flex;
-align-items: center;
-margin:
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  list-style: none;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  padding-left: 16px;
 }
 
-.form-input #textarea {
-height: 170px;
-padding-top: 60px;
+#text-area {
+  height: 170px;
+  padding-top: 16px;
 }
 
 .contact-button {
@@ -437,18 +447,21 @@ padding-top: 60px;
   padding: 12px 16px;
   width: 140px;
   height: 48px;
-  /* left: 24px;
-  top: 5317px; */
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
+  margin-left: 24px;
+  border: 1px solid #cfd8dc;
+}
+
+.contact-button:hover {
+  background: #6070ff;
+  color: #fff;
 }
