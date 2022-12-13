@@ -250,14 +250,17 @@
     <section class="contact-form">
       <h2 class="contact-title" >Contact me</h2>
       <p class="info" >If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
-      <form action="https://formspree.io/f/xaykrzrn" method="post">
+      
+      <fieldset class="fieldset">
+        <form action="https://formspree.io/f/xaykrzrn" method="post">
         <ul>
           <li><input type="text" class="form-input" name="name" placeholder="Your Name" maxlength="30" required></li>
           <li><input type="email" class="form-input" name="email" placeholder="Your Email" required></li>
-          <li><textarea class="form-input" name="text-area" placeholder="Write your message here" maxlength="500" required></textarea></li>
-          <button type="submit" name="button">Get In Touch</button>
+          <li><textarea class="form-input" id="textarea" name="text-area" placeholder="Write your message here" maxlength="500" required></textarea></li>
+          <button class="contact-button" type="submit" name="button">Get In Touch</button>
         </ul>
       </form>
+     </fieldset>
     </section>
   </body>
 </html>

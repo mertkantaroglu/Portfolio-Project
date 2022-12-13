@@ -374,7 +374,7 @@ body {
 }
 
 .contact-form {
-  background-image: url('/Images/Contact-me.png');
+  background-image: url('./Images/Contact-me.png');
   position: absolute;
   width: 375px;
   height: 779px;
@@ -405,4 +405,50 @@ body {
   text-align: center;
   color: #EBEBFF;
   margin: 10px 24px 50px 0;
+}
+
+.fieldset {
+  margin-top: 50px;
+  width: 327px;
+  align-content: center;
+}
+
+.form-input {
+background: #fff;
+color: #172B4D;
+border: 1px solid #CFD8DC;
+border-radius: 8px;
+width: 327px;
+height: 48px;
+display: flex;
+align-items: center;
+margin:
+}
+
+.form-input #textarea {
+height: 170px;
+padding-top: 60px;
+}
+
+.contact-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  /* left: 24px;
+  top: 5317px; */
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070FF;
 }
