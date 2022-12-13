@@ -372,3 +372,37 @@ body {
   order: 2;
   margin-bottom: 36px;
 }
+
+.contact-form {
+  background-image: url('/Images/Contact-me.png');
+  position: absolute;
+  width: 375px;
+  height: 779px;
+  top: 4510px;
+}
+
+.contact-title {
+  height: 56px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.info {
+  width: 327px;
+  height: 102px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+  margin: 10px 24px 50px 0;
+}
