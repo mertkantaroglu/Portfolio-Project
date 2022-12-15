@@ -9,9 +9,7 @@ body {
   background-image: url('./Images/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-size: 375px 718px;
-  background: #FFF
-  /* display: flex; 
-  flex-direction: column; */
+  background-color: #fff;
 }
 
 .main-container {
@@ -20,7 +18,6 @@ body {
   padding-top: 25px;
   order: 0;
 }
-
 
 .header {
   display: flex;
@@ -138,7 +135,7 @@ body {
   position: absolute;
   height: 2788px;
   order: 1;
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 .cards {
@@ -243,7 +240,7 @@ body {
 .about-section {
   width: 100%;
   height: auto;
-  background: #FFF;
+  background: #fff;
   margin-top: 2850px;
   margin-bottom: 450px;
 }
@@ -321,7 +318,7 @@ body {
   width: 327px;
   height: 0;
   position: relative;
-  background: #FFF;
+  background: #fff;
   padding-left: 20px;
 }
 
@@ -330,6 +327,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .right-arrow-container {
   display: flex;
   flex-direction: row-reverse;
@@ -493,7 +491,6 @@ body {
 /* DESKTOP VERSION */
 
 @media (min-width: 768px) {
-  
   .body {
     background-repeat: no-repeat;
     background-size: 100% 718px;
@@ -530,7 +527,7 @@ body {
     visibility: visible;
     width: 63px;
     height: 20px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -556,7 +553,7 @@ body {
   .intro {
     width: 60%;
     height: auto;
-    margin: 0px 200px 0 200px;
+    margin: 0 200px 0 200px;
   }
 
   .works {
@@ -570,7 +567,7 @@ body {
     height: 100%;
     flex-direction: row;
     padding-bottom: 20px;
-    }
+  }
 
   .projects {
     display: flex;
@@ -587,27 +584,29 @@ body {
     margin-left: 20px;
   }
 
-  .project6, .project8 {
+  .project6,
+  .project8 {
     display: flex;
     flex-direction: row-reverse;
     margin-left: 0;
   }
 
-  .picture6, .picture8 {
+  .picture6,
+  .picture8 {
     margin-left: 20px;
   }
 
   .project-details {
     margin-top: 10px;
-
   }
+
   .dev-list {
     width: auto;
   }
 
   /* .project-button {
     margin-left: 4px;
-    margin-top: 10px;  
+    margin-top: 10px;
   } */
 
   .project-button-below {
@@ -615,21 +614,18 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .about-section {
     background-image: url('./Images/about-myself-background-shape-desktop.png');
     display: flex;
     flex-direction: row;
     order: 2;
-    /* margin-top: 2250px;
-    margin-bottom: -10px; */
-    background: #FFF;
+    background-color: #fff;
     margin: 2150px auto 0 100px;
   }
 
   .about-container {
     width: 50%;
-
   }
 
   .about-title {
@@ -639,7 +635,7 @@ body {
 
   .about-detail {
     margin-left: 100px;
-    margin-right: auto; 
+    margin-right: auto;
     width: auto;
   }
 
@@ -660,7 +656,7 @@ body {
     width: 50%;
     padding-top: 100px;
     padding-left: 40px;
-}
+  }
 
   .down-arrow {
     display: flex;
@@ -668,9 +664,9 @@ body {
     transform: rotate(90deg);
   }
 
-  .right-arrow {
+  /* .right-arrow {
 
-  }
+} */
 
   .dev-container {
     flex-direction: row;
@@ -690,9 +686,12 @@ body {
     padding-left: 10px;
     padding-top: 60px;
   }
+
   .contact-form {
     background: url('./Images/contact-form-background-shape-desktop.png') no-repeat, url('./Images/contact\ form\ background\ shapes.png') no-repeat;
+
     /* background-repeat: no-repeat; */
+
     /* background-color: #6070ff; */
     width: 100%;
     height: max-content;
@@ -700,13 +699,13 @@ body {
     flex-direction: column;
     order: 3;
     margin-top: 100px;
+
     /* border: 1px solid yellow; */
-    }
   }
 
   .contact-title {
     margin: 150px 0 24px 0;
-  } 
+  }
 
   .contact-info {
     flex: 1;
@@ -741,3 +740,4 @@ body {
     background: #6070ff;
     color: #fff;
   }
+}
