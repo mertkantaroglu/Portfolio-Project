@@ -6,9 +6,13 @@
 }
 
 body {
-  background-image: url('./Images/header-shapes\ mobile.png');
-  background-repeat: no-repeat;
-  background-size: 375px 718px;
+  background-color: #fff;
+}
+
+.main-container {
+  margin-top: -20px;
+  padding-top: 25px;
+  order: 0;
 }
 
 .header {
@@ -29,7 +33,6 @@ body {
   align-items: center;
   text-align: center;
   color: #6070ff;
-  order: 0;
   flex-grow: 0;
   text-decoration: none;
 }
@@ -42,7 +45,11 @@ body {
   background-color: #6070ff;
 }
 
-.main-container {
+.nav-links {
+  display: none;
+}
+
+.intro-container {
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -116,7 +123,6 @@ body {
 
 .works {
   width: 375px;
-  background: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,6 +130,8 @@ body {
   gap: 88px;
   position: absolute;
   height: 2788px;
+  order: 1;
+  background: #e5e5e5;
 }
 
 .cards {
@@ -139,17 +147,10 @@ body {
   margin-top: 20px;
 }
 
-.project1 {
-  margin: auto auto;
-}
-
 .picture {
   width: 295px;
   height: 220px;
   border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .project-title {
@@ -232,6 +233,14 @@ body {
   margin-top: 5px;
 }
 
+.about-section {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin-top: 2850px;
+  margin-bottom: 450px;
+}
+
 .about-title {
   background: #fff;
   order: 2;
@@ -247,6 +256,7 @@ body {
 }
 
 .about-detail {
+  width: 70%;
   padding: 0 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -301,11 +311,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
   width: 327px;
   height: 0;
   position: relative;
-  margin: -70px;
+  background: #fff;
+  padding-left: 20px;
+}
+
+.arrow-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right-arrow-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .dev-container {
@@ -356,8 +378,6 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   text-align: center;
   color: #253858;
   padding-left: 70px;
@@ -370,32 +390,30 @@ body {
 
 .dev-skills {
   order: 2;
-  margin-bottom: 36px;
 }
 
 .contact-form {
   background-image: url('./Images/Contact-me.png');
-  position: absolute;
-  width: 375px;
-  height: 779px;
-  top: 4510px;
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+  list-style: none;
+  padding-bottom: 40px;
+  margin-top: 600px;
 }
 
 .contact-title {
-  height: 56px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  align-self: center;
   color: #fff;
-  margin: 100px 0 24px 75px;
+  margin: 100px;
 }
 
-.info {
+.contact-info {
   width: 327px;
   height: 102px;
   font-family: 'Poppins', sans-serif;
@@ -464,4 +482,248 @@ body {
 .contact-button:hover {
   background: #6070ff;
   color: #fff;
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 768px) {
+  .main-container {
+    background-image: url('./Images/Header-bg.png');
+    background-position-y: 25px;
+    background-position-x: 40px;
+  }
+
+  .header {
+    margin-right: 155px;
+  }
+
+  .logo {
+    margin-left: 155px;
+    height: 40px;
+  }
+
+  .navbar {
+    visibility: hidden;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3em;
+    flex: 1;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    visibility: visible;
+    width: 63px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
+
+  .about-nav-link {
+    margin-left: 10px;
+  }
+
+  .title {
+    width: 60%;
+    height: auto;
+    margin: 0 200px;
+    letter-spacing: 0.3px;
+    line-height: 1;
+  }
+
+  .intro {
+    width: 60%;
+    height: auto;
+    margin: 0 200px 0 200px;
+  }
+
+  .works {
+    width: 100%;
+    height: auto;
+    order: 1;
+  }
+
+  .cards {
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .picture {
+    flex: 50%;
+    height: 95%;
+  }
+
+  .project-info {
+    flex: 50%;
+    margin-left: 20px;
+  }
+
+  .project6,
+  .project8 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 0;
+  }
+
+  .picture6,
+  .picture8 {
+    margin-left: 20px;
+  }
+
+  .project-details {
+    margin-top: 10px;
+  }
+
+  .dev-list {
+    width: auto;
+  }
+
+  .project-button-below {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    order: 2;
+    background-color: #fff;
+    margin: 2300px auto 0 auto;
+  }
+
+  .about-container {
+    width: 50%;
+    margin-left: 150px;
+    padding-right: 30px;
+  }
+
+  .about-title {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  .about-detail {
+    margin-left: 100px;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .about-connect {
+    margin-left: 100px;
+  }
+
+  .end-social-media-icons {
+    margin-left: 100px;
+  }
+
+  .resume-button {
+    margin-left: 120px;
+    margin-bottom: 75px;
+  }
+
+  .language-container {
+    width: 50%;
+    margin-top: 100px;
+  }
+
+  .lan-list-lang {
+    padding-bottom: 25px;
+    display: flex;
+  }
+
+  .down-arrow {
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(90deg);
+  }
+
+  .dev-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .dev-tools {
+    background: #f7f7f9;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 7em;
+    height: 6em;
+    display: flex;
+  }
+
+  .about-dev-list {
+    padding-left: 10px;
+    padding-top: 60px;
+  }
+
+  .contact-form {
+    background: url('./Images/contact form background shapes.png') no-repeat;
+    background-color: #6070ff;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    order: 3;
+    margin-top: 75px;
+    background-position-y: 75px;
+    background-position-x: 75px;
+  }
+
+  .contact-title {
+    margin: 150px 0 24px 0;
+  }
+
+  .contact-info {
+    flex: 1;
+    width: 40%;
+    height: auto;
+    align-self: center;
+  }
+
+  .fieldset {
+    width: 60%;
+    align-self: center;
+    margin-top: 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .form-input {
+    width: 55%;
+    margin: 0 auto 20px auto;
+  }
+
+  .contact-button {
+    align-self: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0 auto 0 auto;
+  }
+
+  .contact-button:hover {
+    background: #6070ff;
+    color: #fff;
+  }
 }
