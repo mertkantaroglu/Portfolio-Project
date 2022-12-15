@@ -6,10 +6,21 @@
 }
 
 body {
-  background-image: url('./Images/header-shapes\ mobile.png');
+  background-image: url('./Images/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-size: 375px 718px;
+  background: #E5E5E5;
+  /* display: flex; 
+  flex-direction: column; */
 }
+
+.main-container {
+  background-image: url('./Images/about-myself-background-shape-desktop.png');
+  margin-top: -20px;
+  padding-top: 25px;
+  order: 0;
+}
+
 
 .header {
   display: flex;
@@ -29,7 +40,6 @@ body {
   align-items: center;
   text-align: center;
   color: #6070ff;
-  order: 0;
   flex-grow: 0;
   text-decoration: none;
 }
@@ -42,7 +52,11 @@ body {
   background-color: #6070ff;
 }
 
-.main-container {
+.nav-links {
+  display: none;
+}
+
+.intro-container {
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -116,7 +130,6 @@ body {
 
 .works {
   width: 375px;
-  background: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,6 +137,7 @@ body {
   gap: 88px;
   position: absolute;
   height: 2788px;
+  order: 1;
 }
 
 .cards {
@@ -139,17 +153,10 @@ body {
   margin-top: 20px;
 }
 
-.project1 {
-  margin: auto auto;
-}
-
 .picture {
   width: 295px;
   height: 220px;
   border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .project-title {
@@ -232,6 +239,12 @@ body {
   margin-top: 5px;
 }
 
+.about-section {
+  width: auto;
+  height: auto;
+  background: #FFF;
+}
+
 .about-title {
   background: #fff;
   order: 2;
@@ -305,7 +318,6 @@ body {
   width: 327px;
   height: 0;
   position: relative;
-  margin: -70px;
 }
 
 .dev-container {
@@ -356,8 +368,6 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   text-align: center;
   color: #253858;
   padding-left: 70px;
@@ -376,9 +386,10 @@ body {
 .contact-form {
   background-image: url('./Images/Contact-me.png');
   position: absolute;
-  width: 375px;
-  height: 779px;
-  top: 4510px;
+  width: auto;
+  height: auto;
+  list-style: none;
+  padding-bottom: 40px;
 }
 
 .contact-title {
@@ -395,7 +406,7 @@ body {
   margin: 100px 0 24px 75px;
 }
 
-.info {
+.contact-info {
   width: 327px;
   height: 102px;
   font-family: 'Poppins', sans-serif;
@@ -465,3 +476,241 @@ body {
   background: #6070ff;
   color: #fff;
 }
+
+@media (min-width: 768px) {
+  
+  .body {
+    background-repeat: no-repeat;
+    background-size: 100% 718px;
+  }
+
+  .main-container {
+    order: 0;
+  }
+
+  .header {
+    margin-right: 155px;
+  }
+
+  .logo {
+    margin-left: 155px;
+  }
+
+  .navbar {
+    visibility: hidden;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3em;
+    flex: 1;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    visibility: visible;
+    width: 63px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
+
+  .about-nav-link {
+    margin-left: 10px;
+  }
+
+  .title {
+    width: auto;
+    height: auto;
+    margin: 0 200px;
+    letter-spacing: 0.3px;
+    line-height: 1;
+  }
+
+  .intro {
+    width: auto;
+    height: auto;
+    margin: 0px 200px 0 240px;
+  }
+
+  .works {
+    width: auto;
+    height: auto;
+    order: 1;
+  }
+
+  .cards {
+    width: 80%;
+    height: 100%;
+    flex-direction: row;
+    padding-bottom: 20px;
+    }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .picture {
+    flex: 50%;
+    height: 95%;
+  }
+
+  .project-info {
+    flex: 50%;
+    margin-left: 20px;
+  }
+
+  /* .project-info5, .project-info7 {
+    margin-left: 10px;
+  } */
+
+  .project-info6, .project-info8 {
+    flex-direction: row-reverse;
+  }
+
+  /* .project-title {
+    margin-top: 10px;
+  } */
+
+  .project-details {
+    margin-top: 10px;
+
+  }
+  .dev-list {
+    width: auto;
+  }
+
+  .project-button {
+    margin-left: 4px;
+    margin-top: 10px;  
+  }
+  
+  .about-section {
+    background-image: url('./Images/about-myself-background-shape-desktop.png');
+    display: flex;
+    flex-direction: row;
+    order: 2;
+  }
+
+  .about-container {
+    width: 50%;
+    /* border: 1px solid blue; */
+  }
+
+  .about-title {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  .about-detail {
+    margin-left: 100px;
+    margin-right: auto; 
+  }
+
+  .about-connect {
+    margin-left: 100px;
+  }
+
+  .end-social-media-icons {
+    margin-left: 100px;
+  }
+
+  .resume-button {
+    margin-left: 120px;
+    margin-bottom: 75px;
+  }
+
+  .language-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-left: 20px;
+    /* border: 1px solid blue; */
+}
+
+/* .skills {
+  gap: 100px;
+} */
+
+  .dev-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .dev-tools {
+    background: #f7f7f9;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 6em;
+    height: 6em;
+  }
+
+  .about-dev-list {
+    padding-left: 10px;
+    padding-top: 60px;
+  }
+  .contact-form {
+    background-image: url('./Images/contact-form-background-shape-desktop.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+    order: 3;
+    }
+  }
+
+  .contact-title {
+    align-self: center;
+    margin: 200px 0 12px 0;
+  } 
+
+  .contact-info {
+    flex: 1;
+    width: 50%;
+    height: auto;
+    align-self: center;
+  }
+
+  .fieldset {
+    width: 80%;
+    align-self: center;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .form-input {
+    width: 55%;
+    margin: 0 auto 20px auto;
+  }
+
+  .contact-button {
+    align-self: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0 auto 0 auto;
+  }
+
+  .contact-button:hover {
+    background: #6070ff;
+    color: #fff;
+  }
