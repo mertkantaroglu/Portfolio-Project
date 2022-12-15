@@ -6,14 +6,10 @@
 }
 
 body {
-  background-image: url('./Images/header-shapes-mobile.png');
-  background-repeat: no-repeat;
-  background-size: 375px 718px;
   background-color: #fff;
 }
 
 .main-container {
-  background-image: url('./Images/about-myself-background-shape-desktop.png');
   margin-top: -20px;
   padding-top: 25px;
   order: 0;
@@ -491,14 +487,10 @@ body {
 /* DESKTOP VERSION */
 
 @media (min-width: 768px) {
-  .body {
-    background-repeat: no-repeat;
-    background-size: 100% 718px;
-  }
-
   .main-container {
     background-image: url('./Images/Header-bg.png');
-    order: 0;
+    background-position-y: 25px;
+    background-position-x: 40px;
   }
 
   .header {
@@ -604,11 +596,6 @@ body {
     width: auto;
   }
 
-  /* .project-button {
-    margin-left: 4px;
-    margin-top: 10px;
-  } */
-
   .project-button-below {
     display: flex;
     flex-direction: column;
@@ -616,16 +603,18 @@ body {
   }
 
   .about-section {
-    background-image: url('./Images/about-myself-background-shape-desktop.png');
     display: flex;
+    width: 100%;
     flex-direction: row;
     order: 2;
     background-color: #fff;
-    margin: 2150px auto 0 100px;
+    margin: 2300px auto 0 auto;
   }
 
   .about-container {
     width: 50%;
+    margin-left: 150px;
+    padding-right: 30px;
   }
 
   .about-title {
@@ -654,8 +643,12 @@ body {
 
   .language-container {
     width: 50%;
-    padding-top: 100px;
-    padding-left: 40px;
+    margin-top: 100px;
+  }
+
+  .lan-list-lang {
+    padding-bottom: 25px;
+    display: flex;
   }
 
   .down-arrow {
@@ -663,10 +656,6 @@ body {
     justify-content: flex-end;
     transform: rotate(90deg);
   }
-
-  /* .right-arrow {
-
-} */
 
   .dev-container {
     flex-direction: row;
@@ -677,7 +666,7 @@ body {
     background: #f7f7f9;
     border-radius: 8px;
     margin-right: 10px;
-    width: 6em;
+    width: 7em;
     height: 6em;
     display: flex;
   }
@@ -688,19 +677,16 @@ body {
   }
 
   .contact-form {
-    background: url('./Images/contact-form-background-shape-desktop.png') no-repeat, url('./Images/contact\ form\ background\ shapes.png') no-repeat;
-
-    /* background-repeat: no-repeat; */
-
-    /* background-color: #6070ff; */
+    background: url('./Images/contact form background shapes.png') no-repeat;
+    background-color: #6070ff;
     width: 100%;
     height: max-content;
     display: flex;
     flex-direction: column;
     order: 3;
-    margin-top: 100px;
-
-    /* border: 1px solid yellow; */
+    margin-top: 75px;
+    background-position-y: 75px;
+    background-position-x: 75px;
   }
 
   .contact-title {
@@ -709,13 +695,13 @@ body {
 
   .contact-info {
     flex: 1;
-    width: 50%;
+    width: 40%;
     height: auto;
     align-self: center;
   }
 
   .fieldset {
-    width: 80%;
+    width: 60%;
     align-self: center;
     margin-top: 0;
   }
