@@ -530,6 +530,10 @@ body {
     color: #344563;
   }
 
+  .nav-links:hover {
+    color: #6070ff;
+  }
+
   .about-nav-link {
     margin-left: 10px;
   }
@@ -540,6 +544,20 @@ body {
     margin: 0 200px;
     letter-spacing: 0.3px;
     line-height: 1;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 150%;
+      line-height: 50%;
+    }
+
+    to {
+      margin-left: 10%;
+      line-height: 100%;
+    }
   }
 
   .intro {
