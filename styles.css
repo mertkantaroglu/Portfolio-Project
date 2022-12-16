@@ -234,7 +234,8 @@ body {
   transition: all 0.5s ease-out;
 }
 
-.project-button:hover, .project-button:focus {
+.project-button:hover,
+.project-button:focus {
   background-color: rgb(229, 225, 237);
   color: goldenrod;
 }
@@ -626,22 +627,22 @@ body {
     align-items: flex-start;
   }
 
-.project-title {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 130%;
-    width: 300%;
+  .project-title {
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
+  @keyframes slidein {
+    from {
+      margin-left: 130%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
-}
 
   .about-section {
     display: flex;
