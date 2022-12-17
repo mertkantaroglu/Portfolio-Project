@@ -547,7 +547,7 @@ body {
     margin: 0 200px;
     letter-spacing: 0.3px;
     line-height: 1;
-    animation: rotation 2s;
+    animation: rotation 2.5s;
   }
 
   @keyframes rotation {
@@ -630,7 +630,7 @@ body {
   }
 
   .project-title {
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
   }
 
