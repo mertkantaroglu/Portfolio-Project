@@ -231,13 +231,6 @@ body {
   color: #396df2;
   border-color: #396df2;
   margin-top: 5px;
-  transition: all 0.5s ease-out;
-}
-
-.project-button:hover,
-.project-button:focus {
-  background-color: rgb(229, 225, 237);
-  color: goldenrod;
 }
 
 .about-section {
@@ -494,10 +487,13 @@ body {
 /* DESKTOP VERSION */
 
 @media (min-width: 768px) {
-  .main-container {
+  .intro-container {
     background-image: url('./Images/Header-bg.png');
     background-position-y: 25px;
     background-position-x: 40px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
 
   .header {
@@ -551,19 +547,16 @@ body {
     margin: 0 200px;
     letter-spacing: 0.3px;
     line-height: 1;
-    animation-duration: 3s;
-    animation-name: slidein;
+    animation: rotation 2s;
   }
 
-  @keyframes slidein {
+  @keyframes rotation {
     from {
-      margin-left: 150%;
-      line-height: 50%;
+      transform: rotate(0deg);
     }
 
     to {
-      margin-left: 10%;
-      line-height: 100%;
+      transform: rotate(360deg);
     }
   }
 
@@ -627,6 +620,15 @@ body {
     align-items: flex-start;
   }
 
+  .project-button {
+    transition: all 0.5s ease-in;
+  }
+
+  .project-button:hover {
+    background-color: rgb(229, 225, 237);
+    color: goldenrod;
+  }
+
   .project-title {
     animation-duration: 3s;
     animation-name: slidein;
@@ -634,7 +636,7 @@ body {
 
   @keyframes slidein {
     from {
-      margin-left: 130%;
+      margin-left: 150%;
       width: 300%;
     }
 
@@ -654,7 +656,7 @@ body {
   }
 
   .about-container {
-    width: 50%;
+    width: 40%;
     margin-left: 150px;
     padding-right: 30px;
   }
@@ -684,8 +686,9 @@ body {
   }
 
   .language-container {
-    width: 50%;
+    width: 60%;
     margin-top: 100px;
+    max-width: 600px;
   }
 
   .lan-list-lang {
