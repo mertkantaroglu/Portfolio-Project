@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 body {
@@ -10,6 +10,8 @@ body {
 }
 
 .main-container {
+  background-image: url('./Images/header-shapes-mobile.png'), url('./Images/header-background-mobile.png');
+  background-repeat: no-repeat;
   margin-top: -20px;
   padding-top: 25px;
   order: 0;
@@ -234,14 +236,18 @@ body {
 }
 
 .about-section {
+  /* background-image: url('./Images/Base\ about\ my\ self.png');
+  background-repeat: no-repeat; */
+  background: white;
+  border-top-right-radius: 50px;
   width: 100%;
-  height: auto;
+  height: 110vh;
   margin-top: 2850px;
-  margin-bottom: 450px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .about-title {
-  background: #fff;
   order: 2;
   width: 327px;
   font-family:
@@ -251,12 +257,11 @@ body {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
-  padding: 0 24px;
+  padding: 20px 24px 0 24px;
 }
 
 .about-detail {
-  width: 70%;
-  padding: 0 24px;
+  padding: 10px 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -310,11 +315,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 327px;
-  height: 0;
   position: relative;
-  background: #fff;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .arrow-container {
@@ -354,6 +356,7 @@ body {
 
 .skills li {
   list-style: none;
+  display: flex;
 }
 
 .lan-list {
@@ -392,13 +395,16 @@ body {
 }
 
 .contact-form {
-  background-image: url('./Images/Contact-me.png');
+  background-image: url('./Images/contact\ form\ shapes-mobile.png');
   background-repeat: no-repeat;
+  background-color: #6070ff;
+  border-top-left-radius: 100px;
   width: auto;
   height: auto;
   list-style: none;
   padding-bottom: 40px;
-  margin-top: 600px;
+  margin-top: -180px;
+  background-position-x: right;
 }
 
 .contact-title {
@@ -409,12 +415,14 @@ body {
   line-height: 52px;
   align-self: center;
   color: #fff;
-  margin: 100px;
+  margin-top: 100px;
+  padding-top: 75px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-info {
-  width: 327px;
-  height: 102px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -426,8 +434,6 @@ body {
 }
 
 .fieldset {
-  margin-top: 50px;
-  width: 327px;
   align-content: center;
   border: none;
 }
@@ -489,7 +495,7 @@ body {
   .main-container {
     background-image: url('./Images/Header-bg.png'), url('./Images/header\ background\ shape-desktop.png');
     background-repeat: no-repeat;
-    background-size: 1440px 700px;
+    background-size: 100% 700px;
   }
 
   .intro-container {
@@ -568,9 +574,10 @@ body {
   }
 
   .works {
-    width: 100%;
+    width: auto;
     height: auto;
-    order: 1;
+    margin-left: 10%;
+    margin-right: auto;
   }
 
   .cards {
@@ -652,7 +659,8 @@ body {
   }
 
   .about-section {
-    background-image: url('./Images/about\ myself\ -\ background-\ shape-\ desktop.svg');
+    border-top-right-radius: 100px;
+    background: #FFF;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -699,6 +707,10 @@ body {
     margin-bottom: 200px;
   }
 
+  .arrow-container {
+    width: 120%;
+  }
+
   .lan-list-lang {
     padding-bottom: 25px;
     display: flex;
@@ -715,6 +727,14 @@ body {
     justify-content: center;
   }
 
+  .right-arrow-container {
+    width: 120%;
+  }
+
+  hr {
+    border-bottom: 1px solid #DFE1E6;
+    width: 120%;
+  }
   .dev-tools {
     background: #f7f7f9;
     border-radius: 8px;
@@ -730,18 +750,18 @@ body {
   }
 
   .contact-form {
-    background: url('./Images/contact form background shapes.png'), url('./Images/contact-form-background-shape-desktop.png');
+    background: url('./Images/contact\ form\ background\ shapes.png'), url('./Images/contact-form-background-shape-desktop.png');
     background-repeat: no-repeat;
+    background-size: 100% 110%;
     width: 100%;
-    height: max-content;
+    height: auto;
     display: flex;
     flex-direction: column;
     order: 3;
-    margin-top: -125px;
   }
 
   .contact-title {
-    margin: 150px 0 24px 0;
+    margin: 100px 0 24px 0;
   }
 
   .contact-info {
@@ -768,9 +788,8 @@ body {
 
   .contact-button {
     align-self: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin: 0 auto 0 auto;
+    padding: auto 10px;
+    margin: 20px auto 100px auto; 
   }
 
   .contact-button:hover {
