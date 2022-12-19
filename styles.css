@@ -660,7 +660,7 @@ body {
 
   .about-section {
     border-top-right-radius: 100px;
-    background: #FFF;
+    background: #fff;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -732,9 +732,10 @@ body {
   }
 
   hr {
-    border-bottom: 1px solid #DFE1E6;
+    border-bottom: 1px solid #dfe1e6;
     width: 120%;
   }
+
   .dev-tools {
     background: #f7f7f9;
     border-radius: 8px;
@@ -789,7 +790,7 @@ body {
   .contact-button {
     align-self: center;
     padding: auto 10px;
-    margin: 20px auto 100px auto; 
+    margin: 20px auto 100px auto;
   }
 
   .contact-button:hover {
