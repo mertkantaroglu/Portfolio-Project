@@ -581,7 +581,7 @@ body {
   }
 
   .card1 {
-    margin-top: -350px;
+    margin-top: -150px;
   }
 
   .projects {
@@ -657,7 +657,7 @@ body {
     width: 100%;
     flex-direction: row;
     order: 2;
-    margin: 1900px auto 0 auto;
+    margin: 2075px auto 0 auto;
     height: 100%;
   }
 
