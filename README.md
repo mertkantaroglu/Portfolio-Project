@@ -48,6 +48,8 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+[Loom Walk-through Video](https://www.loom.com/share/8af64774b10b470588043face3f6562d)
+
 ### Prerequisites <a name="prerequisites"></a>
 
 In order to run this project you need a Chrome, Safari or Mozilla browser
