@@ -489,6 +489,31 @@ body {
   color: #fff;
 }
 
+.mobile-menu {
+  background: #6070FF;
+  mix-blend-mode: multiply;   
+}
+
+.mobile-menu-cancel {
+  /* border: 2px solid #67798E; */
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+}
+
+.mobile-menu-links {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
 /* DESKTOP VERSION */
 
 @media (min-width: 768px) {
