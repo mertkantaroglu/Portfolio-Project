@@ -19,10 +19,10 @@
   <body>
     <!-- Mobile Menu -->
     <section class="mobile-menu">
-      <div class="mobile-menu-cancel">
-        <img src="./Images/Icon - Cancel.png">
+      <div class="mobile-menu-cancel" >
+        <img src="./Images/Icon - Cancel.png" onclick="closeMobileMenu()">
       </div>
-      <ul>
+      <ul class="menu-links">
         <li><a href="#" class="mobile-menu-links">Portfolio</a></li>
         <li><a href="#" class="mobile-menu-links">About</a></li>
         <li><a href="#" class="mobile-menu-links">Contact</a></li>
@@ -32,7 +32,7 @@
     <section class="main-container">
       <header class="header">
         <a href="#" class="logo">My Logo</a>
-        <nav class="hamburger">
+        <nav class="hamburger" onclick="openMobilemenu()">
           <span class="navbar"><a href="#" class="nav-links">Portfolio</a></span>
           <span class="navbar"><a href="#" class="nav-links about-nav-link">About</a></span>
           <span class="navbar"><a href="#" class="nav-links">Contact</a></span>
