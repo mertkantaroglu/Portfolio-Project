@@ -236,8 +236,6 @@ body {
 }
 
 .about-section {
-  /* background-image: url('./Images/Base\ about\ my\ self.png');
-  background-repeat: no-repeat; */
   background: white;
   border-top-right-radius: 50px;
   width: 100%;
@@ -490,40 +488,23 @@ body {
 }
 
 .mobile-menu {
-  display: none;
+  /* display: none; */
   flex-direction: column;
   align-items: flex-end;
   width: 100%;
   height: 100vh;
   background-color: #3145f9f3;
-  position: absolute;
-  z-index: 1;  
-}
-
-.menu-links {
-  padding-left: 2.5rem;
-  margin-top: 10%;
-  width: 100%;
-  
+  position: fixed;
+  z-index: 1;
+  margin-top: -20px;
 }
 
 .mobile-menu-links {
   text-decoration:none ;
   list-style-type: none;
-}
-
-.mobile-menu-cancel {
-  display: block;
-  background-image: url(imgs/x-icon.png);
-  width: 10px;
-  height: 10px;
-  font-size: 25px;
-  color: white;
-  margin: 10% 10% 0 0;
-  cursor: pointer;
-}
-
-.mobile-menu-links {
+  padding-left: 2.5rem;
+  margin-top: 10%;
+  width: 100%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -533,6 +514,17 @@ body {
   align-items: center;
   color: #FFFFFF;
 }
+
+.cancel-icon {
+  display: block;
+  width: 10px;
+  height: 10px;
+  font-size: 25px;
+  color: white;
+  margin: 10% 10% auto auto;
+  cursor: pointer;
+}
+
 
 /* DESKTOP VERSION */
 
