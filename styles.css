@@ -488,9 +488,8 @@ body {
 }
 
 .mobile-menu {
-  /* display: none; */
+  display: none;
   flex-direction: column;
-  align-items: flex-end;
   width: 100%;
   height: 100vh;
   background-color: #3145f9f3;
@@ -499,9 +498,15 @@ body {
   margin-top: -20px;
 }
 
+.menu-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .mobile-menu-links {
-  text-decoration:none ;
-  list-style-type: none;
+  text-decoration: none;
   padding-left: 2.5rem;
   margin-top: 10%;
   width: 100%;
@@ -512,19 +517,18 @@ body {
   line-height: 44px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .cancel-icon {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   font-size: 25px;
   color: white;
   margin: 10% 10% auto auto;
   cursor: pointer;
 }
-
 
 /* DESKTOP VERSION */
 
