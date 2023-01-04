@@ -14,9 +14,22 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
+    <script src="/menu.js" defer></script>
   </head>
   <body>
     <section class="main-container">
+    <!-- Mobile Menu -->
+    <section class="mobile-menu">
+      <div class="mobile-menu-cancel" >
+        <img src="./Images/Icon - Cancel.png" class="cancel-icon">
+      </div>
+      <ul class="menu-links">
+        <li><a href="#Portfolio" class="mobile-menu-links">Portfolio</a></li>
+        <li><a href="#About" class="mobile-menu-links">About</a></li>
+        <li><a href="#Contact" class="mobile-menu-links">Contact</a></li>
+      </ul>
+    </section>
+    
       <header class="header">
         <a href="#" class="logo">My Logo</a>
         <nav class="hamburger">
@@ -75,8 +88,9 @@
       </div>
     </section>
 
+
     <!-- Works Section -->
-    <section class="works">
+    <section class="works" id="Portfolio">
       <section class="cards card1">
         <div class="projects project5">
           <img
@@ -203,7 +217,7 @@
     </section>
 
     <!-- About Myself Section -->
-    <section class="about-section">
+    <section class="about-section" id="About">
       <div class="about-container">
         <h2 class="about-title">About Myself</h2>
         <p class="about-detail">Hello I’m a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -275,7 +289,7 @@
     </section>
 
     <!-- Contact-Form -->
-    <section class="contact-form">
+    <section class="contact-form" id="Contact">
       <h2 class="contact-title" >Contact me</h2>
       <p class="contact-info" >If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
       
@@ -290,5 +304,6 @@
         </form>
       </fieldset>
     </section>
+
   </body>
 </html>

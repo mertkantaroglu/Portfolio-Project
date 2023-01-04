@@ -236,8 +236,6 @@ body {
 }
 
 .about-section {
-  /* background-image: url('./Images/Base\ about\ my\ self.png');
-  background-repeat: no-repeat; */
   background: white;
   border-top-right-radius: 50px;
   width: 100%;
@@ -487,6 +485,49 @@ body {
 .contact-button:hover {
   background: #6070ff;
   color: #fff;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #3145f9f3;
+  position: fixed;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mobile-menu-links {
+  text-decoration: none;
+  padding-left: 2.5rem;
+  margin-top: 10%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.cancel-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 25px;
+  color: white;
+  margin: 10% 10% auto auto;
+  cursor: pointer;
 }
 
 /* DESKTOP VERSION */
