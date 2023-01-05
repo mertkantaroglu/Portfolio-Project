@@ -535,7 +535,7 @@ body {
 }
 
 .modal-card {
-  /* display: none; */
+  display: none;
   margin: 20px 0;
   justify-content: center;
   align-content: center;
