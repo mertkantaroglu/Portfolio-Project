@@ -202,7 +202,7 @@ body {
   color: #344563;
 }
 
-.dev-list>* {
+.dev-list > * {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -840,7 +840,7 @@ body {
   }
 
   /* new codes  */
-    #card-container {
+  #card-container {
     position: fixed;
     top: 0;
     transform: scale(0.1);
@@ -851,9 +851,9 @@ body {
     margin: 10px 10px 10px 10px;
     padding: 10px 10px 10px 10px;
     background: white;
-    border: 1px solid #DFE1E6;
+    border: 1px solid #dfe1e6;
     border-radius: 16px;
-    color: #172B4D;
+    color: #172b4d;
     z-index: 3;
   }
 
@@ -875,17 +875,18 @@ body {
     gap: 10px;
   }
 
-  #live-btn, #source-btn {
+  #live-btn,
+  #source-btn {
     padding-left: 10px;
     margin-top: -20px;
   }
 
-    .modal-project-btn {
+  .modal-project-btn {
     padding: 16px;
     background: transparent;
-    border: 1px solid #DFE1E6;
+    border: 1px solid #dfe1e6;
     border-radius: 16px;
-    color: #396DF2;
+    color: #396df2;
     flex-direction: row;
     gap: 10px;
     align-items: baseline;
@@ -893,18 +894,18 @@ body {
   }
 
   .modal-project-btn:focus {
-    background: #2230D2;
+    background: #2230d2;
     color: #fff;
   }
 
   .modal-project-btn:hover {
-    background: #6070FF;
+    background: #6070ff;
     color: #fff;
   }
 
   .modal-project-btn:disabled {
     background: #fff;
-    color: #5E6C84;
+    color: #5e6c84;
   }
 
   .cancel-btn {
