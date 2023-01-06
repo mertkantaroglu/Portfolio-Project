@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <script src="/menu.js" defer></script>
+    
   </head>
   <body>
     <section class="main-container">
@@ -147,7 +147,7 @@
               <li><h3 class="css">css</h3></li>
               <li><h3 class="js">javaScript</h3></li>
             </ul>
-            <button class="project-button" type="button">See Project</button>
+            <button class="project-button" id="project-btn" type="button">See Project</button>
             </div>
           </div>
         </div>
@@ -294,16 +294,76 @@
       <p class="contact-info" >If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
       
       <fieldset class="fieldset">
-        <form action="https://formspree.io/f/xaykrzrn" method="post">
+        <form action="https://formspree.io/f/xaykrzrn" method="post" id="form">
         <ul>
           <li><input type="text" class="form-input" name="name" placeholder="Your Name" maxlength="30" required></li>
-          <li><input type="email" class="form-input" name="email" placeholder="Your Email" required></li>
+          <li><input type="email" class="form-input" id="email" name="email" placeholder="Your Email" required></li>
           <li><textarea class="form-input" id="text-area" name="text-area" placeholder="Write your message here" maxlength="500" required></textarea></li>
           <button class="contact-button" type="submit" name="button">Get In Touch</button>
         </ul>
+        <span class="email-error hidden" id="error-message'"></span>
         </form>
       </fieldset>
     </section>
 
+    <!-- MODAL SECTION -->
+    <!-- <div class="card-container" id="card-container">
+    <div class="card-container-title"><h2 id="title">Tonic</h2> <img src="./Images/Icon - Cancel.png" alt="xx" class="tonicx" id="tonicx"> </div>
+    <div><ul class="card__content--item1">
+      <li class="card__item--heading"> Canopy</li>
+      <li class="card__item--heading1"> <img src="Images/Counter.png" alt="Counter"> Back End Dev</li>
+      <li class="card__item--heading2"> <img src="Images/Counter.png" alt="Counter"> 2015</li>
+    </ul></div>
+    <div><img class="mobiletonic" id="mobiletonic" src="./Images/xweb.png" alt="MobileTonic"></div>
+    <div><p class="card__content--desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p></div>
+    <div> <ul class="card__content--item2">
+      <li class="tech__btn1">html</li>
+      <li class="tech__btn2">css</li>
+      <li class="tech__btn3">Javascript</li>
+    </ul></div>
+    <div class="bcontainer">
+      <button class="btncontainer1" id="site">See Live<img src="ivit.svg" class="btncntim"></button>
+      <button class="btncontainer" id="site">See Live</button>
+      <button class="btncontainer" id="source">See Source<img src="./Images/igit.png" class="btncntim"></button>
+    </div>
+  </div> -->
+    <section class="cards card1" id="card-container">
+        <div class="projects project5">
+          <img
+            class="picture" id="card-pic1"
+            src="Images/Snapshoot_Portfolio_project5.png"
+            alt="Snapshoot Portfolio Pic 5"
+          />
+          <div class="project-info project-info5">
+            <h2 class="project-title" id="project-title">Tonic</h2>
+            <img src="./Images/Icon - Cancel.png" alt="xx" id="cancel-btn">
+          </div>
+            <ul class="project-summary" id="project-summary">
+              <li><h3 class="canopy">CANOPY</h3></li>
+              <li><h3 class="dot"></h3></li>
+              <li><h3 class="back-end-dev">Back End Dev</h3></li>
+              <li><h3 class="dot"></h3></li>
+              <li><h3 class="year">2015</h3></li>
+            </ul>
+            <p class="project-details" id="project-details">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <div class="project-button-below">
+            <ul class="dev-list" id="dev-list">
+              <li><h3 class="html">html</h3></li>
+              <li><h3 class="css">css</h3></li>
+              <li><h3 class="js">javaScript</h3></li>
+            </ul>
+            <div id="modal-links">
+            <button class="modal-project-btn" type="button">See Live<img src="./Images/live-icon.png" id="live-btn"></button>
+            <button class="modal-project-btn" type="button">See Source<img src="./Images/github.png" id="source-btn"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="./JS/menu.js"></script>
+    <script src="./JS/modal.js"></script>
+    <script src="./JS/validation.js"></script>
   </body>
 </html>
