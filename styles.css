@@ -202,7 +202,7 @@ body {
   color: #344563;
 }
 
-.dev-list>* {
+.dev-list > * {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -243,7 +243,6 @@ body {
 button.project-button:active {
   background-color: #2230d2;
 }
-
 
 .about-section {
   background: white;
@@ -600,7 +599,6 @@ button.project-button:active {
   line-height: 16px;
   color: #396df2;
   list-style: none;
-
 }
 
 .card-tags2 {
@@ -637,7 +635,6 @@ button.project-button:active {
   color: var(--clr-purple);
   padding: 4px 12px;
 }
-
 
 @media (min-width: 320px) {
   .overlay {
@@ -677,6 +674,7 @@ button.project-button:active {
     height: 40px;
     justify-content: space-between;
   }
+
   .closeIcon-popup {
     color: #67798e;
     font-size: 20px;
@@ -738,7 +736,7 @@ button.project-button:active {
     padding: 0;
     gap: 8px;
   }
-    
+
   .divider2 {
     position: absolute;
     left: 20px;
@@ -758,45 +756,45 @@ button.project-button:active {
   }
 
   .seeSource {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  padding: 12px;
-  background: transparent;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  color: #396df2;
-  border-color: #396df2;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  width: 60%;
-  height: 48px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    color: #396df2;
+    border-color: #396df2;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 60%;
+    height: 48px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
   }
 
   .seeLive {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  width: 55%;
-  height: 48px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  padding: 12px;
-  background: transparent;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  color: #396df2;
-  border-color: #396df2;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 55%;
+    height: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    color: #396df2;
+    border-color: #396df2;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-right: 10px;
   }
 
   .live-icon {
@@ -1241,13 +1239,9 @@ button.project-button:active {
   .popups-project-p-mobile {
     display: none;
   }
-  
+
   .popups-project-p-desktop {
     margin-top: 6%;
-  }
-
-  .card-tags1 {
-    display: flex;
   }
 
   .action {
@@ -1259,11 +1253,11 @@ button.project-button:active {
 
   .seeSource {
     display: flex;
-      width: 70%;
-      margin-right: -16%;
-      justify-content: space-between;
-      align-content: flex-end;
-      padding-left: 8%;
+    width: 70%;
+    margin-right: -16%;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding-left: 8%;
   }
 
   .card-tags1 {
@@ -1305,10 +1299,9 @@ button.project-button:active {
 
   .left-block {
     display: block;
-      gap: 12px;
-      margin-top: 68%;
-      margin-right: 28%;
-      margin-left: -7%;
+    gap: 12px;
+    margin-top: 68%;
+    margin-right: 28%;
+    margin-left: -7%;
   }
-
 }

@@ -1,3 +1,4 @@
+// Mobile menu //
 const mobileMenu = document.querySelector('.mobile-menu');
 const hamburger = document.querySelector('.hamburger');
 const menuLinks = document.querySelector('.menu-links');
@@ -18,7 +19,7 @@ function closeMobileMenu() {
 menuLinks.addEventListener('click', closeMobileMenu);
 closeIcon.addEventListener('click', closeMobileMenu);
 
-//modal window
+// Popup Cards //
 const modal = document.querySelector('.popup-window');
 const overlay = document.querySelector('.overlay');
 const openModalBtn1 = document.querySelector('.project-button1');
@@ -27,6 +28,7 @@ const openModalBtn3 = document.querySelector('.project-button3');
 const openModalBtn4 = document.querySelector('.project-button4');
 const closeModalBtn = document.querySelector('.closeIcon-popup');
 
+// Card Objects //
 const projects = [
   {
     name: 'Tonic',
@@ -80,6 +82,7 @@ const openModal1 = function () {
   overlay.classList.remove('hidden');
   modal.style.display = 'flex';
 
+  // Populating cards with object items //
   popupsProjectImage.src = projects[0].image;
   popupsProjectTitle.innerHTML = projects[0].name;
   popupsProjectDesktop.innerHTML = projects[0].content1;
@@ -138,7 +141,6 @@ const openModal4 = function () {
 };
 
 openModalBtn4.addEventListener('click', openModal4);
-
 
 // Closing popup //
 
