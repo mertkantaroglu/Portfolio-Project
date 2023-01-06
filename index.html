@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <script src="/menu.js" defer></script>
   </head>
   <body>
     <section class="main-container">
@@ -87,7 +86,62 @@
         </div>
       </div>
     </section>
+    <div class="overlay hidden"></div>
+    <div class= "modal popup-window hidden" style="overflow-y: auto;">
+        <div class="popups-container" id="Tonic-popup">
+            <div class="top-block">
+                <div class="frame1">
+                    <h2 class="popups-proj-title"></h2>
+                    <span id="btn-close" data-dismiss="popup-window" class="closeIcon-popup">x</span>
+                </div>
 
+             <div class="frame2">
+                <ul class="card-frame">
+                    <li>CANOPY</li>
+                    <li class="no-count">Back End Dev</li>
+                    <li class="no-count">2015</li>
+                </ul>
+             </div>
+            </div>
+
+            <div class="img-popup">
+                <img class="popup-img modal-content">
+            </div>
+            
+            <div class="right-block modal-body">
+              <p class="popups-project-p-mobile"></p>
+              <ul class="card-tags2">
+                  <li class="card-tagsLi">HTML</li>
+                  <li class="card-tagsLi">css</li>
+                  <li class="card-tagsLi">javascript</li>
+              </ul>
+              
+              <ul class="card-tags1">
+                  <li class="card-tagsLi1">Github</li>
+                  <li class="card-tagsLi1">Ruby</li>
+                  <li class="card-tagsLi1">Frontend</li>
+              </ul>
+              <hr class="divider2">
+              <div class="action">
+                  <button class="seeSource see"><p>See Source</p>
+                      <div class="see2"></div>
+                  </button>
+                  <hr class="divider">
+                  <button class="seeLive see"><p>See Live</p>
+                        <div class="see1"></div>
+                    </button>
+                </div>
+                <hr class="divider2">
+            </div>
+
+            <div class="left-block">
+                <p class="popups-project-p-desktop modal-content"></p>
+
+
+            </div>
+        </div>
+        
+    </div>
 
     <!-- Works Section -->
     <section class="works" id="Portfolio">
@@ -117,7 +171,7 @@
               <li><h3 class="css">css</h3></li>
               <li><h3 class="js">javaScript</h3></li>
             </ul>
-            <button class="project-button" type="button">See Project</button>
+            <button class="project-button1 project-button" type="submit">See Project</button>
             </div>
           </div>
         </div>
@@ -304,6 +358,6 @@
         </form>
       </fieldset>
     </section>
-
+    <script src="JS/menu.js"></script>
   </body>
 </html>
