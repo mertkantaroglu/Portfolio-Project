@@ -202,7 +202,7 @@ body {
   color: #344563;
 }
 
-.dev-list>* {
+.dev-list > * {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
