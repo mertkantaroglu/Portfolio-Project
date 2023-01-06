@@ -142,8 +142,7 @@ const openModal4 = function () {
 
 openModalBtn4.addEventListener('click', openModal4);
 
-// Closing popup //
-
+// Closing Popup //
 const closeModal = function () {
   modal.style.display = 'none';
   overlay.classList.add('hidden');
@@ -151,14 +150,6 @@ const closeModal = function () {
 
 closeModalBtn.addEventListener('click', closeModal);
 
-// // Email Validation //
-// document.getElementById('contact').onsubmit = (e) => {
-//   const email = document.getElementById('email').value;
-//   if (email !== email.toLowerCase()) {
-//     e.preventDefault();
-//     document.getElementById('error').innerText = 'Email must be in lowercase';
-//   }
-// };
 
 // Email Validation //
 const form = document.querySelector('.form-group');

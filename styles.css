@@ -704,6 +704,11 @@ button.project-button:active {
   .popups-project-p-mobile {
     margin-left: 2%;
     width: 120%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #344563;
   }
 
   .card-tags1 {
