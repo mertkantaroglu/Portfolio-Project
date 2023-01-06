@@ -319,6 +319,13 @@ button.project-button:active {
   margin-bottom: 20px;
 }
 
+.error {
+  position: absolute;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  margin-left: 25rem;
+}
+
 .language-container {
   display: flex;
   flex-direction: column;
