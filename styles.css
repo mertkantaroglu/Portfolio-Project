@@ -1064,7 +1064,7 @@ button.project-button:active {
   }
 
   .divider2 {
-    width: 94%;
+    width: 85%;
     margin-top: 20%;
     left: 10px;
   }
@@ -1171,11 +1171,12 @@ button.project-button:active {
     left: 24px;
     top: 24px;
     background-color: #fff;
+    margin-top: -10px;
   }
 
   .frame1 {
     flex-wrap: wrap;
-    width: 110%;
+    width: 106%;
   }
 
   .frame2 {
@@ -1209,29 +1210,27 @@ button.project-button:active {
   }
 
   .card-frame {
-    margin-left: -180%;
-    margin-top: -15%;
+    margin-left: -170%;
+    margin-top: -10%;
   }
 
   .popup-img {
     position: absolute;
-    width: 96%;
+    object-fit: cover;
+    width: 90%;
     height: 62%;
     left: 0;
     top: 0;
     margin-top: 11%;
-    margin-left: 2%;
+    margin-left: 5%;
+    border: 1px solid darkgrey;
+    border-radius: 8px;
   }
 
   .right-block {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    gap: 12px;
     position: absolute;
     width: auto;
-    height: 157px;
+    height: 13vh;
     right: 24px;
     top: 781px;
   }
@@ -1241,7 +1240,14 @@ button.project-button:active {
   }
 
   .popups-project-p-desktop {
-    margin-top: 6%;
+    margin-top: 7%;
+    margin-left: 4%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
   }
 
   .action {
@@ -1253,8 +1259,8 @@ button.project-button:active {
 
   .seeSource {
     display: flex;
-    width: 70%;
-    margin-right: -16%;
+    width: 65%;
+    margin-right: -12%;
     justify-content: space-between;
     align-content: flex-end;
     padding-left: 8%;
@@ -1294,7 +1300,7 @@ button.project-button:active {
 
   .seeLive {
     align-items: flex-end;
-    width: 70%;
+    width: 60%;
   }
 
   .left-block {
