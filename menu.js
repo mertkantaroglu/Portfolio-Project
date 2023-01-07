@@ -150,37 +150,11 @@ const closeModal = function () {
 
 closeModalBtn.addEventListener('click', closeModal);
 
-
 // Email Validation //
-const form = document.querySelector('.form-group');
-const email = document.getElementById('email');
-
-// Invalid error message
-const setError = (message) => {
-  const errorDisplay = document.querySelector('.error');
-  errorDisplay.innerText = message;
-};
-
-// valid success message
-const setSuccess = () => {
-  const errorDisplay = document.querySelector('.error');
-  errorDisplay.innerText = '';
-};
-
-const inputValidation = (e) => {
-  const emailValue = email.value.trim();
-
-  if (emailValue === '') {
-    setError('Email is required');
+document.getElementById('contact-form').onsubmit = (e) => {
+  const email = document.getElementById('email').value;
+  if (email !== email.toLowerCase()) {
     e.preventDefault();
-  } else if (emailValue.toLowerCase() !== emailValue) {
-    setError('Provide a valid email address');
-    e.preventDefault();
-  } else {
-    setSuccess();
+    document.getElementById('error').innerHTML = 'Email must be in lowercase';
   }
 };
-
-form.addEventListener('submit', (e) => {
-  inputValidation(e);
-});

@@ -825,7 +825,6 @@ button.project-button:active {
   margin-left: 3rem;
   font-size: 22px;
   background: transparent;
-  border: 1px solid aliceblue;
   padding: 2px;
 }
 
@@ -1140,14 +1139,13 @@ button.project-button:active {
   }
 
   .error {
-    color: #da650c;
+    color: #dad40c;
     font-weight: bold;
-    margin-left: 15rem;
+    margin-left: 16rem;
     margin-right: auto;
-    font-size: 28px;
-    background: transparent;
-    border: 1px solid aliceblue;
-    padding: 6px;
+    margin-top: -5rem;
+    padding-top: -18rem;
+    font-size: 30px;
   }
 
   .overlay {

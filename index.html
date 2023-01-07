@@ -347,15 +347,15 @@
       <p class="contact-info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
       
       <fieldset class="fieldset">
-        <form action="https://formspree.io/f/xaykrzrn" method="post">
+        <form action="https://formspree.io/f/xaykrzrn" method="post" id="contact-form">
         <ul>
           <li><input type="text" class="form-input" name="name" placeholder="Your Name" maxlength="30" required></li>
           <li><input type="email" id="email" class="form-input" name="email" placeholder="Your Email" required></li>
+          <p class="error" id="error"></p>
           <li><textarea class="form-input" id="text-area" name="text-area" placeholder="Write your message here" maxlength="500" required></textarea></li>
           <button class="contact-button" type="submit" name="button">Get In Touch</button>
         </ul>
 
-        <span class="error" id="error"></span>
         </form>
       </fieldset>
     </section>
