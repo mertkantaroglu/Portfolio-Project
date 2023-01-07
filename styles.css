@@ -651,8 +651,8 @@ button.project-button:active {
     gap: 12px;
     position: fixed;
     width: 94%;
-    height: 85vh;
-    top: 60px;
+    height: 88vh;
+    top: 45px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
@@ -740,7 +740,7 @@ button.project-button:active {
     left: 20px;
     right: 24px;
     border: 1px solid #ebecf0;
-    margin-top: 50%;
+    margin-top: -3%;
   }
 
   .divider {
@@ -817,6 +817,7 @@ button.project-button:active {
     background-image: url(imgs/githubVector.png);
     background-repeat: no-repeat;
   }
+
 
   .error {
     width: auto;
@@ -929,7 +930,7 @@ button.project-button:active {
   }
 
   .card1 {
-    margin-top: -150px;
+    margin-top: -2%;
   }
 
   .projects {
@@ -1006,7 +1007,7 @@ button.project-button:active {
     width: 100%;
     flex-direction: row;
     order: 2;
-    margin: 135% auto 0 auto;
+    margin: 160% auto 0 auto;
     height: 100%;
   }
 
@@ -1074,8 +1075,8 @@ button.project-button:active {
 
   .divider2 {
     width: 85%;
-    margin-top: 20%;
     left: 10px;
+    margin-top: -3%;
   }
 
   .dev-tools {
@@ -1152,8 +1153,8 @@ button.project-button:active {
   }
 
   .overlay {
-    height: 102vh;
-    width: 100vw;
+    height: 102%;
+    width: 100%;
     position: fixed;
     backdrop-filter: blur(20px);
     z-index: 1;
@@ -1196,15 +1197,12 @@ button.project-button:active {
 
   .frame1 {
     flex-wrap: wrap;
-    width: 106%;
+    width: 108%;
+    margin-left: -7%;
   }
 
   .frame2 {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    gap: 12px;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     width: auto;
     margin-right: 2.5rem;
   }
@@ -1230,19 +1228,17 @@ button.project-button:active {
   }
 
   .card-frame {
-    margin-left: -170%;
-    margin-top: -10%;
+    margin-left: -22rem;
+    margin-top: -3rem;
   }
 
   .popup-img {
     position: absolute;
     object-fit: cover;
     width: 90%;
-    height: 62%;
-    left: 0;
-    top: 0;
-    margin-top: 11%;
-    margin-left: 5%;
+    height: 20rem;
+    margin-top: 5rem;
+    margin-left: -2rem;
     border: 1px solid darkgrey;
     border-radius: 8px;
   }
@@ -1251,8 +1247,8 @@ button.project-button:active {
     position: absolute;
     width: auto;
     height: 13vh;
-    right: 24px;
-    top: 781px;
+    right: 1rem;
+    top: 29rem;
   }
 
   .popups-project-p-mobile {
@@ -1260,7 +1256,7 @@ button.project-button:active {
   }
 
   .popups-project-p-desktop {
-    margin-top: 7%;
+    margin-top: 2.7rem;
     margin-left: 4%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1324,10 +1320,122 @@ button.project-button:active {
   }
 
   .left-block {
-    display: block;
-    gap: 12px;
-    margin-top: 68%;
-    margin-right: 28%;
+    display: flex;
+    margin-top: 23rem;
+    margin-right: 19rem;
     margin-left: -7%;
+    z-index: 1;
+  }
+}
+
+/* BIG SCREENS */
+
+@media (min-width: 1280px) {
+  .frame1 {
+    margin-left: -3%;
+  }
+
+  .popup-img {
+    width: 68vw;
+    height: 36vh;
+    margin-left: 3%;
+  }
+
+  .popups-project-p-desktop {
+    margin-top: 2.7rem;
+    margin-left: 4%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .left-block {
+    margin-top: 19rem;
+  }
+
+  .right-block {
+    top: 27rem;
+  }
+
+  .card-frame {
+    margin-left: -23rem;
+    margin-top: -4rem;
+  }
+
+  .frame2 {
+    margin-top: 3.5rem;
+    width: auto;
+    margin-right: 15.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .frame1 {
+    margin-left: 0%;
+  }
+
+  .left-block {
+    display: flex;
+    margin-top: 29rem;
+    margin-right: 15rem;
+    margin-left: -7%;
+  }
+
+  .right-block {
+    top: 37rem;
+  }
+
+  .popups-project-p-desktop {
+    margin-top: 7%;
+    margin-left: 4%;
+    margin-right: 3%;
+    z-index: 1;
+  }
+
+  .card-frame {
+    margin-left: -260%;
+    margin-top: -10%;
+  }
+
+  .overlay {
+    height: 102%;
+  }
+
+  .popup-img {
+    width: 75vw;
+    height: 49vh;
+    margin-left: -2%;
+  }
+
+  .frame2 {
+    margin-top: 2.5rem;
+    margin-left: 40rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .frame1 {
+    margin-left: 2%;
+  }
+
+  .popup-img {
+    width: 75vw;
+    height: 49vh;
+    margin-left: -2%;
+  }
+
+  .right-block {
+    top: 42rem;
+  }
+
+  .left-block {
+    margin-top: 35rem;
+  }
+
+  .frame2 {
+    margin-left: 14rem;
   }
 }
