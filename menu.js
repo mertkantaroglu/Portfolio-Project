@@ -36,7 +36,7 @@ const projects = [
     image: 'Images/Snapshoot_Portfolio_project5.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     link: 'link_to_live_version.com',
-    content1: 'Lorem ipsum it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing...',
+    content1: 'Lorem ipsum it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the...',
     content2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus mollitia saepe maxime vitae nostrum repellat eligendi amet voluptas modi repudiandae necessitatibus animi harum obcaecati at omnis laboriosam sapiente eum rem velit molestias',
     tags1: ['HTML', 'css', 'Javascript'],
     tags2: ['Github', 'Ruby', 'Frontend'],
@@ -142,11 +142,19 @@ const openModal4 = function () {
 
 openModalBtn4.addEventListener('click', openModal4);
 
-// Closing popup //
-
+// Closing Popup //
 const closeModal = function () {
   modal.style.display = 'none';
   overlay.classList.add('hidden');
 };
 
 closeModalBtn.addEventListener('click', closeModal);
+
+// Email Validation //
+document.getElementById('contact-form').onsubmit = (e) => {
+  const email = document.getElementById('email').value;
+  if (email !== email.toLowerCase()) {
+    e.preventDefault();
+    document.getElementById('error').innerHTML = 'Email must be in lowercase';
+  }
+};

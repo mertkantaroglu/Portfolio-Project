@@ -121,18 +121,15 @@
                   <li class="card-tags-down">Ruby</li>
                   <li class="card-tags-down">Frontend</li>
               </ul>
-              <hr class="divider2">
               <div class="action">
+                <hr class="divider2">
                 <button class="seeLive see"><p>See Live<img src="./Images/live-icon.png" class="live-icon"></p>
                         <div class="see1"></div>
-                  </button>
-                  <hr class="divider">
-                  
+                  </button>                  
                   <button class="seeSource see"><p>See Source</p><img src="./Images/github-button.png" class="source-icon">
                       <div class="see2"></div>
                   </button>
                 </div>
-                <hr class="divider2">
             </div>
 
             <div class="left-block">
@@ -342,12 +339,12 @@
     </section>
 
     <!-- Contact-Form -->
-    <section class="contact-form form-group" id="Contact">
-      <h2 class="contact-title" >Contact me</h2>
+    <section class="contact-form form-group" id="contact">
+      <h2 class="contact-title">Contact me</h2>
       <p class="contact-info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
       
       <fieldset class="fieldset">
-        <form action="https://formspree.io/f/xaykrzrn" method="post">
+        <form action="https://formspree.io/f/xaykrzrn" method="post" id="contact-form">
         <ul>
           <li><input type="text" class="form-input" name="name" placeholder="Your Name" maxlength="30" required></li>
           <li><input type="email" id="email" class="form-input" name="email" placeholder="Your Email" required></li>
@@ -355,7 +352,7 @@
           <button class="contact-button" type="submit" name="button">Get In Touch</button>
         </ul>
 
-        <span class="error"></span>
+        <span class="error" id="error"></span>
         </form>
       </fieldset>
     </section>
