@@ -159,3 +159,16 @@ document.getElementById('contact-form').onsubmit = (e) => {
     document.getElementById('error').innerHTML = 'Email must be in lowercase';
   }
 };
+
+
+// Debugger Exercise //
+
+const works = document.getElementById('works');
+
+works.onsubmit = (e) => {
+  const email = document.getElementById('email').value;
+  if (email !== email.toLowerCase()) {
+    e.preventDefault();
+    document.getElementById('error').innerHTML = 'Email must be in lowercase';
+  }
+};
