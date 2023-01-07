@@ -202,7 +202,7 @@ body {
   color: #344563;
 }
 
-.dev-list>* {
+.dev-list > * {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -1072,8 +1072,8 @@ button.project-button:active {
 
   .divider2 {
     width: 85%;
-    margin-top: 20%;
     left: 10px;
+    margin-top: -3%;
   }
 
   .dev-tools {
@@ -1322,16 +1322,11 @@ button.project-button:active {
     margin-left: -7%;
     z-index: 1;
   }
-
-  .divider2 {
-    margin-top: -3%;
-  }
 }
 
 /* BIG SCREENS */
 
 @media (min-width: 1280px) {
-
   .frame1 {
     margin-left: -3%;
   }
@@ -1371,11 +1366,9 @@ button.project-button:active {
     width: auto;
     margin-right: 15.5rem;
   }
-
 }
 
 @media (min-width: 1440px) {
-
   .frame1 {
     margin-left: 0%;
   }
@@ -1420,7 +1413,6 @@ button.project-button:active {
 }
 
 @media (min-width: 1920px) {
-
   .frame1 {
     margin-left: 2%;
   }
