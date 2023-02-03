@@ -242,6 +242,9 @@ body {
 
 button.project-button:active {
   background-color: #2230d2;
+  color: #396df2;
+  border-color: #396df2;
+  text-decoration: none;
 }
 
 .about-section {

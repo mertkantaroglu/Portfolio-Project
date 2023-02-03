@@ -163,12 +163,12 @@ document.getElementById('contact-form').onsubmit = (e) => {
 
 // Debugger Exercise //
 
-const works = document.getElementsById('works');
+const works = document.getElementsById - incorrect / querySelector with '.' to choose a class ('works');
 
 works.onsubmit = (event) => {
   const email = document.getElementById('email').value;
   if (email !== email.toLowerCase()) {
-    e.preventDefault();
-    document.getElementById('error').appendChild = 'Email must be in lowercase';
+    e - inccorect- / should match 'event' .preventDefault();
+    document.getElementById('error').appendChild - incorrect / should be innerHTML to write down = 'Email must be in lowercase';
   }
-},
+}, - incorrect / should be semicolumn
