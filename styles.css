@@ -786,25 +786,19 @@ button.project-button:active {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 17px;
-    line-height: 24px;
-    padding: 12px;
     background: transparent;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     color: #396df2;
     border-color: #396df2;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
     margin-right: 10px;
-  }
-
-  .live-icon {
-    margin-left: 4px;
   }
 
   .see p {
     font-size: 15px;
-    margin-top: 1rem;
+    display: flex;
+    margin: auto;
+    gap: 5px;
   }
 
   .see1 {
@@ -1199,23 +1193,24 @@ button.project-button:active {
 
   .frame1 {
     flex-wrap: wrap;
-    width: 108%;
-    margin-left: -7%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50%;
   }
 
   .frame2 {
-    margin-top: 3rem;
-    width: auto;
-    margin-right: 2.5rem;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    margin: 4rem 0rem 0rem 50rem;
   }
 
   .closeIcon-popup {
     color: #67798e;
-    margin: auto;
-    margin-left: 92%;
     font-size: 30px;
     cursor: pointer;
-    margin-top: -2%;
   }
 
   .popups-proj-title {
@@ -1224,9 +1219,6 @@ button.project-button:active {
     font-weight: 700;
     font-size: 40px;
     color: #091e42;
-    width: auto;
-    height: 40px;
-    padding-left: 5rem;
   }
 
   .card-frame {
@@ -1263,7 +1255,7 @@ button.project-button:active {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     color: #344563;
   }
@@ -1277,11 +1269,8 @@ button.project-button:active {
 
   .seeSource {
     display: flex;
-    width: 65%;
-    margin-right: -12%;
-    justify-content: space-between;
-    align-content: flex-end;
-    padding-left: 8%;
+    align-items: flex-end;
+    width: 70%;
   }
 
   .card-tags1 {
@@ -1289,31 +1278,14 @@ button.project-button:active {
   }
 
   .see p {
-    height: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
     display: flex;
-    align-items: center;
     text-align: center;
     color: #396df2;
-    margin-top: 0.8rem;
-  }
-
-  .see1 {
-    width: 20px;
-    height: 20px;
-    background-image: url(imgs/Icon.png);
-    background-repeat: no-repeat;
-  }
-
-  .see2 {
-    width: 20px;
-    height: 20px;
-    background-image: url(imgs/githubVector.png);
-    background-repeat: no-repeat;
+    margin: auto;
+    gap: 8px;
   }
 
   .seeLive {
