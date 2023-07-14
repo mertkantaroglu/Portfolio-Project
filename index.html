@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mert Portfolio Project</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <title>Mert's Portfolio</title>
     <link rel="stylesheet" href="styles2.css" />
 
     <link
@@ -32,17 +31,17 @@
     </section>
 
       <header class="header">
-        <a href="#" class="logo">My Logo</a>
+        <a href="#" class="logo">Home</a>
         <nav class="hamburger">
-          <span class="navbar"><a href="#" class="nav-links">Portfolio</a></span>
-          <span class="navbar"><a href="#" class="nav-links about-nav-link">About</a></span>
-          <span class="navbar"><a href="#" class="nav-links">Contact</a></span>
+          <span class="navbar"><a href="#Portfolio" class="nav-links">Portfolio</a></span>
+          <span class="navbar"><a href="#About" class="nav-links about-nav-link">About</a></span>
+          <span class="navbar"><a href="#Contact" class="nav-links">Contact</a></span>
         </nav>
       </header>
 
       <div class="intro-container">
         <div class="title">
-          <h1>This is Mert <br> Glad to see you!</h1>
+          <h1><span class="name">Mert Kantaroglu</span><br><span class="name-title">Software Developer</span></h1>
         </div>
         <div class="intro">
           <p>
@@ -51,33 +50,33 @@
             you see and have a project you need coded, don’t hesitate to contact
             me.
           </p>
-          <h3><a class="connect" href="#">LET'S CONNECT</a></h3>
+          <h3><a class="connect" href="#Contact">LET'S CONNECT</a></h3>
           <div class="social-media">
             <ul class="social-media-icons">
               <li>
-                <a href="https://twitter.com/aranelluinwe">
-                  <img src="Images/twitter.png" alt="twitter logo"
+                <a href="https://twitter.com/aranelluinwe" target="_blank">
+                  <img src="Images/twitter.png"  alt="twitter logo"
                 /></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/mert-kantaroglu/">
+                <a href="https://www.linkedin.com/in/mert-kantaroglu/" target="_blank">
                   <img
                     src="Images/Linkedin.png"
                     alt="linkedin logo"
                 /></a>
               </li>
               <li>
-                <a href="https://medium.com/@mertkantaroglu">
+                <a href="https://medium.com/@mertkantaroglu" target="_blank">
                   <img src="Images/medium.png" alt="medium logo"
                 /></a>
               </li>
               <li>
-                <a href="https://github.com/mertkantaroglu">
+                <a href="https://github.com/mertkantaroglu" target="_blank">
                   <img src="Images/github.png" alt="github logo"
                 /></a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://wellfound.com/u/mert-kantaroglu" target="_blank">
                   <img
                     src="Images/angellist.png"
                     alt="angellist logo"
@@ -143,6 +142,8 @@
 
     <!-- Works Section -->
     <section class="works" id="Portfolio">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-container">
       <section class="cards card1">
         <div class="projects project5">
           <img
@@ -167,7 +168,10 @@
               <li><h3 class="js">JavaScript</h3></li>
             </ul>
             <button class="project-button1 project-button" type="submit">
-              See Project
+              Live Demo
+            </button>
+            <button class="project-button2 project-button" type="github">
+              GitHub
             </button>
             </div>
           </div>
@@ -196,8 +200,12 @@
               <li><h3 class="css">CSS</h3></li>
               <li><h3 class="js">JavaScript</h3></li>
             </ul>
-            <button class="project-button project-button2" type="button">
-              See Project</button>
+            <button class="project-button1 project-button" type="submit">
+              Live Demo
+            </button>
+            <button class="project-button2 project-button" type="github">
+              GitHub
+            </button>
             </div>
           </div>
         </div>
@@ -227,8 +235,12 @@
               <li><h3 class="react">React</h3></li>
               <li><h3 class="redux">Redux</h3></li>
             </ul>
-            <button class="project-button project-button3" type="button">
-              See Project</button>
+            <button class="project-button1 project-button" type="submit">
+              Live Demo
+            </button>
+            <button class="project-button2 project-button" type="github">
+              GitHub
+            </button>
             </div>
           </div>
         </div>
@@ -259,11 +271,17 @@
               <li><h3 class="css">css</h3></li>
               <li><h3 class="js">javaScript</h3></li>
             </ul>
-            <button class="project-button project-button4" type="button">See Project</button>
+            <button class="project-button1 project-button" type="submit">
+              Live Demo
+            </button>
+            <button class="project-button2 project-button" type="github">
+              GitHub
+            </button>
           </div>
           </div>
         </div>
       </section>
+    </div>
     </section>
 
     <!-- About Myself Section -->
@@ -272,7 +290,7 @@
         <h2 class="about-title">About Myself</h2>
         <p class="about-detail">Hello I’m a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
         <br>
-        <h3><a class="about-connect" href="#">LET'S CONNECT</a></h3>
+        <h3><a class="about-connect" href="#Contact">LET'S CONNECT</a></h3>
           <div class="social-media">
             <ul class="end-social-media-icons">
               <li>
@@ -350,8 +368,8 @@
     </section>
 
     <!-- Contact-Form -->
-    <section class="contact-form form-group" id="contact">
-      <h2 class="contact-title">Contact me</h2>
+    <section class="contact-form form-group" id="Contact">
+      <h2 class="contact-title">Contact Me</h2>
       <p class="contact-info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
 
       <fieldset class="fieldset">
@@ -368,6 +386,5 @@
       </fieldset>
     </section>
     <script src="menu.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
   </body>
 </html>
