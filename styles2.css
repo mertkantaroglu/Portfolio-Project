@@ -20,6 +20,11 @@ body {
   margin: 4%;
 }
 
+.logo {
+  font-size: 18px;
+  text-decoration: none;
+}
+
 .hamburger {
   display: flex;
   align-items: center;
@@ -40,6 +45,14 @@ body {
   color: whitesmoke;
 }
 
+.name {
+  font-size: 24px;
+}
+
+.name-title {
+  font-size: 20px;
+}
+
 .intro-container {
   margin: 0;
   padding: 1rem;
@@ -47,6 +60,12 @@ body {
 
 .title {
   margin-bottom: 5%;
+  text-align: center;
+}
+
+.intro {
+  width: 90%;
+  margin: auto;
 }
 
 .intro a, .about-container a {
@@ -72,6 +91,11 @@ img {
 
 .cancel-icon {
   width: auto;
+}
+
+.projects-title {
+  text-align: center;
+  text-decoration: underline;
 }
 
 .cards {
@@ -124,7 +148,7 @@ img {
 }
 
 .about-container > * {
-  color: #6070ff;
+  color: #4a4f80;
 }
 
 .about-container {
@@ -177,7 +201,7 @@ img {
 }
 
 .languages, .skills {
-  margin-left: 2rem;
+  padding-left: 3rem;
 }
 
 .contact-form {
@@ -222,4 +246,268 @@ img {
   border: none;
   margin-top: 0.5rem;
   font-weight: bold;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #959fff;
+  position: fixed;
+  z-index: 1;
+  margin-top: -2%;
+  display: flex;
+  height: 100vh;
+  margin: -4% 0 0;
+}
+
+.mobile-menu-links {
+  text-decoration: none;
+  padding-left: 2.5rem;
+  margin-top: 10%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.cancel-icon {
+  display: block;
+  font-size: 30px;
+  margin: 10% 10% auto auto;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: baseline;
+    margin: 4% 8% 4% 2%;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3em;
+    flex: 1;
+  }
+
+  .navbar {
+    visibility: hidden;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    visibility: visible;
+    font-size: 18px;
+    display: flex;
+  }
+
+  .nav-links:hover {
+    color: #6070ff;
+  }
+
+  .about-nav-link {
+    margin-left: 10px;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .name-title {
+    font-size: 24px;
+  }
+
+  .intro-container {
+    margin: 0 10%;
+    text-align: center;
+  }
+
+  .intro a, .about-container a {
+    color: #4a4f80
+  }
+
+  .intro p {
+    width: 60%;
+    margin: 1rem auto 2rem;
+    font-size: 20px;
+  }
+
+  .social-media-icons, .end-social-media-icons {
+    margin: 2% 0;
+    justify-content: center;
+  }
+
+  .works {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .projects-title {
+    text-align: center;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+
+  .projects img {
+    max-width: 100%;
+    height: 15rem;
+    margin: 2% auto;
+    width: 95%;
+  }
+
+  .cancel-icon {
+    width: auto;
+  }
+
+  .cards {
+    width: 40%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-info {
+    margin: 2% 4% 4% 4%;
+  }
+
+  .project-summary, .project-details {
+    margin: 3% 0;
+  }
+
+  .project-summary li {
+    font-size: 14px;
+  }
+
+  .dev-list {
+    display: flex;
+    gap: 0 1rem;
+    list-style: none;
+    margin: 2% 0;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .project-button {
+    background: white;
+    color: #6070ff;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+  }
+
+  .about-section {
+    background-color: whitesmoke;
+    margin-top: 1rem;
+  }
+
+  .about-container > * {
+    color: #4a4f80;
+  }
+
+  .about-container {
+    margin: 1rem 5%;
+    text-align: center;
+  }
+
+  .about-title {
+    margin-bottom: 2%;
+    padding-top: 2rem;
+  }
+
+  .about-detail {
+    width: 65%;
+    margin: auto;
+  }
+
+  .resume-button {
+    border: 1px solid #4a4f80;
+    margin: 0;
+  }
+
+  .end-social-media-icons {
+    justify-content: center;
+  }
+
+  .language-container {
+    padding: 2rem 22%;
+  }
+
+  .languages, .frameworks, .skills, .soft-skills {
+    flex: 0%;
+    width: 20%;
+  }
+
+  .languages, .skills {
+    padding-left: 0;
+  }
+
+  .contact-form {
+    margin: 5%;
+  }
+
+  .contact-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .contact-info {
+    width: 60%;
+  }
+
+  .fieldset {
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+  }
+
+  .form-list {
+    list-style: none;
+  }
+
+  .form-input {
+    min-width: 250px;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0.5rem 0 0;
+    border: none;
+    color: #444;
+  }
+
+  .contact-button {
+    padding: 10px;
+    color: #6070ff;
+    border-radius: 12px;
+    border: none;
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
 }
