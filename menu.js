@@ -28,50 +28,100 @@ const openModalBtn3 = document.querySelector('.project-button3');
 const openModalBtn4 = document.querySelector('.project-button4');
 const closeModalBtn = document.querySelector('.closeIcon-popup');
 
-// Card Objects //
-const projects = [
-  {
-    name: 'Conference Project',
-    description: 'A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.',
-    image: 'Images/Conference_1.png',
-    technologies: ['html', 'css', 'javaScript'],
-    link: 'https://mertkantaroglu.github.io/Capstone-Conference-Project/',
+// // Card Objects //
+// const projects = [
+//   {
+//     name: 'Conference Project',
+//     description: 'A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.',
+//     image: 'Images/Conference_1.png',
+//     technologies: ['html', 'css', 'javaScript'],
+//     link: 'https://mertkantaroglu.github.io/Capstone-Conference-Project/',
 
-    content1: 'A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.',
-    content2: 'A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.',
-    tags1: ['HTML', 'CSS', 'JavaScript'],
-    tags2: ['Frontend', 'Full-stack Development','Github',],
-  },
-  {
-    name: 'TV Show App',
-    image: 'Images/js project ss.png',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    link: 'https://mertkantaroglu.github.io/JS-Capstone-Project/dist/index.html',
-    content1: 'A dynamic website displaying information about TV shows.',
-    content2: 'A dynamic website displaying information about TV shows.',
-    tags1: ['HTML', 'CSS', 'JavaScript'],
-    tags2: ['Frontend', 'Full-stack Development','Github',]
-  },
-  {
-    name: 'Crypto Market App',
-    image: 'Images/react project ss.png',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-    link: 'https://coin-market-app-project.netlify.app/',
-    content1: ' In this project you can see the current prices and details of cryptocoins.',
-    content2: ' In this project you can see the current prices and details of cryptocoins.',
-    tags1: ['HTML', 'CSS', 'JavaScript', 'React'],
-    tags2: ['Frontend', 'Full-stack Development','Github',]
-  },
-  {
-    name: 'Uber Navigation',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    image: 'Images/Snapshoot Portfolio (1).png',
-    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    link: 'link_to_live_version.com',
-    content1: 'Lorem ipsum it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer ...',
-    content2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus mollitia saepe maxime vitae nostrum repellat eligendi amet voluptas modi repudiandae necessitatibus animi harum obcaecati at omnis laboriosam sapiente eum rem velit molestias',
-  },
-];
+//     content1: 'A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.',
+//     content2: 'A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.',
+//     tags1: ['HTML', 'CSS', 'JavaScript'],
+//     tags2: ['Frontend', 'Full-stack Development','Github',],
+//   },
+//   {
+//     name: 'TV Show App',
+//     image: 'Images/js project ss.png',
+//     technologies: ['HTML', 'CSS', 'JavaScript'],
+//     link: 'https://mertkantaroglu.github.io/JS-Capstone-Project/dist/index.html',
+//     content1: 'A dynamic website displaying information about TV shows.',
+//     content2: 'A dynamic website displaying information about TV shows.',
+//     tags1: ['HTML', 'CSS', 'JavaScript'],
+//     tags2: ['Frontend', 'Full-stack Development','Github',]
+//   },
+//   {
+//     name: 'Crypto Market App',
+//     image: 'Images/react project ss.png',
+//     technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+//     link: 'https://coin-market-app-project.netlify.app/',
+//     content1: ' In this project you can see the current prices and details of cryptocoins.',
+//     content2: ' In this project you can see the current prices and details of cryptocoins.',
+//     tags1: ['HTML', 'CSS', 'JavaScript', 'React'],
+//     tags2: ['Frontend', 'Full-stack Development','Github',]
+//   },
+//   {
+//     name: 'Uber Navigation',
+//     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+//     image: 'Images/Snapshoot Portfolio (1).png',
+//     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+//     link: 'link_to_live_version.com',
+//     content1: 'Lorem ipsum it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer ...',
+//     content2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus mollitia saepe maxime vitae nostrum repellat eligendi amet voluptas modi repudiandae necessitatibus animi harum obcaecati at omnis laboriosam sapiente eum rem velit molestias',
+//   },
+// ];
+
+// Fetch Projects
+fetch("projects.json")
+  .then(response => response.json())
+  .then(data => renderProjects(data))
+  .catch(error => console.error(error));
+
+// Render Projects
+function renderProjects(projects) {
+  const projectsContainer = document.querySelector(".projects-container");
+
+  projects.forEach((project, index) => {
+    const projectCard = `
+      <section class="cards">
+        <div class="projects project${index + 1}">
+          <img
+            class="picture picture${index + 1}"
+            src="${project.image}"
+            alt="${project.name}"
+          />
+          <div class="project-info project-info${index + 1}">
+            <h2 class="project-title">${project.name}</h2>
+            <ul class="project-summary">
+              <li><h3 class="back-end-dev">${project.technologies[0]}</h3></li>
+              <li><h3 class="dot"></h3></li>
+              <li><h3 class="year">${project.year}</h3></li>
+            </ul>
+            <p class="project-details">${project.description}</p>
+            <div class="project-button-below">
+              <ul class="dev-list">
+                ${project.technologies
+                  .map(tech => `<li><h3 class="html">${tech}</h3></li>`)
+                  .join("")}
+              </ul>
+              <button class="project-button1 project-button" type="submit">
+                Live Demo
+              </button>
+              <button class="project-button2 project-button" type="github">
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+
+    projectsContainer.innerHTML += projectCard;
+  });
+}
+
 
 const popupsProjectImage = document.querySelector('.popup-img');
 const popupsProjectTitle = document.querySelector('.popups-proj-title');
