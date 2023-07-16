@@ -2,26 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-top: 6px;
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #6070ff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .main-container {
-  background-image: url('./Images/header-shapes-mobile.png'), url('./Images/header-background-mobile.png');
-  background-repeat: no-repeat;
-  margin-top: -20px;
-  padding-top: 25px;
   order: 0;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
-  height: 100px;
-  margin: 10px 30px;
+  margin: 5% 0 0;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15rem;
 }
 
 .logo {
@@ -34,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #6070ff;
+  color: whitesmoke;
   flex-grow: 0;
   text-decoration: none;
 }
@@ -44,11 +44,12 @@ body {
   width: 18px;
   height: 3px;
   margin: 3px;
-  background-color: #6070ff;
+  background-color: whitesmoke;
 }
 
 .nav-links {
   display: none;
+  color: whitesmoke;
 }
 
 .intro-container {
@@ -60,23 +61,21 @@ body {
   align-items: center;
   padding-top: 50px;
   padding-right: 20px;
+  margin-bottom: 1rem;
 }
 
 .title {
-  width: 327px;
-  height: 150px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 40px;
-  line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172b4d;
+  color: whitesmoke;
   order: 0;
   flex-grow: 0;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding-left: 2%;
+  margin: 0 5%;
 }
 
 .intro {
@@ -87,27 +86,33 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #344563;
+  color: whitesmoke;
   order: 0;
   flex-grow: 0;
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 10px;
   justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.intro h3 {
+  margin-bottom: 1rem;
 }
 
 .connect {
   height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 24px;
-  color: #7f8cff;
+  color: white;
   order: 2;
   flex-grow: 0;
   justify-content: flex-start;
   text-decoration: none;
+  margin-top: 1rem;
 }
 
 .social-media-icons {
@@ -124,29 +129,25 @@ body {
 }
 
 .works {
-  width: 375px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 24px;
-  gap: 88px;
-  position: absolute;
-  height: 2788px;
   order: 1;
-  background: #e5e5e5;
+  margin: 25% auto 10%;
 }
 
 .cards {
-  width: 327px;
+  width: 102%;
   padding: 16px 16px 25px 16px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  height: 552px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .picture {
@@ -162,6 +163,7 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  margin-bottom: 0.75rem;
 }
 
 .project-summary {
@@ -251,10 +253,8 @@ button.project-button:active {
   background: white;
   border-top-right-radius: 50px;
   width: 100%;
-  height: 110vh;
-  margin-top: 2850px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 5%;
+  margin: 10% auto 0;
 }
 
 .about-title {
@@ -325,9 +325,9 @@ button.project-button:active {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 25px;
   background: white;
-  height: 75vh;
+  margin: auto;
+  width: fit-content;
 }
 
 .arrow-container {
@@ -406,8 +406,6 @@ button.project-button:active {
 }
 
 .contact-form {
-  background-image: url('./Images/contact\ form\ shapes-mobile.png');
-  background-repeat: no-repeat;
   background-color: #6070ff;
   border-top-left-radius: 100px;
   width: auto;
@@ -447,6 +445,8 @@ button.project-button:active {
 .fieldset {
   align-content: center;
   border: none;
+  display: flex;
+  justify-content: center;
 }
 
 .form-input {
@@ -467,6 +467,10 @@ button.project-button:active {
   line-height: 24px;
   color: #b3bac5;
   padding-left: 16px;
+}
+
+.fieldset li {
+  list-style: none;
 }
 
 #text-area {
@@ -491,7 +495,7 @@ button.project-button:active {
   text-align: center;
   letter-spacing: 0.03em;
   color: #6070ff;
-  margin-left: 24px;
+  margin: auto;
   border: 1px solid #cfd8dc;
 }
 
@@ -504,11 +508,11 @@ button.project-button:active {
   display: none;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 102%;
   background-color: #3145f9f3;
   position: fixed;
   z-index: 1;
-  margin-top: -20px;
+  margin-top: -2%;
 }
 
 .menu-links {
@@ -714,6 +718,10 @@ button.project-button:active {
     color: #344563;
   }
 
+  .works {
+    margin: auto;
+  }
+
   .card-tags1 {
     display: flex;
     flex-direction: row;
@@ -786,25 +794,19 @@ button.project-button:active {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 17px;
-    line-height: 24px;
-    padding: 12px;
     background: transparent;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     color: #396df2;
     border-color: #396df2;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
     margin-right: 10px;
-  }
-
-  .live-icon {
-    margin-left: 4px;
   }
 
   .see p {
     font-size: 15px;
-    margin-top: 1rem;
+    display: flex;
+    margin: auto;
+    gap: 5px;
   }
 
   .see1 {
@@ -836,19 +838,13 @@ button.project-button:active {
 /* DESKTOP VERSION */
 
 @media (min-width: 768px) {
-  .main-container {
-    background-image: url('./Images/Header-bg.png'), url('./Images/header\ background\ shape-desktop.png');
-    background-repeat: no-repeat;
-    background-size: 100% 700px;
-  }
-
   .intro-container {
     align-items: center;
-    height: 60vh;
+    height: 70vh;
   }
 
   .header {
-    margin-right: 155px;
+    margin-right: 15%;
   }
 
   .logo {
@@ -871,17 +867,13 @@ button.project-button:active {
   .nav-links {
     text-decoration: none;
     visibility: visible;
-    width: 63px;
-    height: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #344563;
+    font-weight: 500;
   }
 
   .nav-links:hover {
@@ -895,20 +887,8 @@ button.project-button:active {
   .title {
     width: 60%;
     height: auto;
-    margin: 0 200px;
     letter-spacing: 0.3px;
     line-height: 1;
-    animation: rotation 2.5s;
-  }
-
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
   }
 
   .intro {
@@ -918,10 +898,7 @@ button.project-button:active {
   }
 
   .works {
-    width: auto;
-    height: auto;
-    margin-left: 10%;
-    margin-right: auto;
+    margin: -10% auto auto 0;
   }
 
   .cards {
@@ -942,7 +919,8 @@ button.project-button:active {
 
   .picture {
     flex: 50%;
-    height: 95%;
+    height: 100%;
+    width: 50%;
   }
 
   .project-info {
@@ -988,6 +966,7 @@ button.project-button:active {
   .project-title {
     animation-duration: 2s;
     animation-name: slidein;
+    margin-bottom: 1rem;
   }
 
   @keyframes slidein {
@@ -1009,15 +988,15 @@ button.project-button:active {
     width: 100%;
     flex-direction: row;
     order: 2;
-    margin: 160% auto 0 auto;
+    margin: 10% auto 0 auto;
     height: 100%;
   }
 
   .about-container {
-    width: 40%;
-    margin-left: 150px;
-    padding-right: 30px;
-    margin-bottom: 200px;
+    width: 50%;
+    padding-right: 2%;
+    margin-bottom: 5%;
+    margin: auto auto 5%;
   }
 
   .about-title {
@@ -1095,9 +1074,11 @@ button.project-button:active {
     padding-top: 60px;
   }
 
+  form {
+    width: 50%;
+  }
+
   .contact-form {
-    background: url('./Images/contact\ form\ background\ shapes.png'), url('./Images/contact-form-background-shape-desktop.png');
-    background-repeat: no-repeat;
     background-size: 100% 110%;
     width: 100%;
     display: flex;
@@ -1118,7 +1099,7 @@ button.project-button:active {
   }
 
   .fieldset {
-    width: 60%;
+    width: 150%;
     align-self: center;
     margin-top: 0;
   }
@@ -1199,23 +1180,24 @@ button.project-button:active {
 
   .frame1 {
     flex-wrap: wrap;
-    width: 108%;
-    margin-left: -7%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50%;
   }
 
   .frame2 {
-    margin-top: 3rem;
-    width: auto;
-    margin-right: 2.5rem;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    margin: 4rem 0rem 0rem 50rem;
   }
 
   .closeIcon-popup {
     color: #67798e;
-    margin: auto;
-    margin-left: 92%;
     font-size: 30px;
     cursor: pointer;
-    margin-top: -2%;
   }
 
   .popups-proj-title {
@@ -1224,9 +1206,6 @@ button.project-button:active {
     font-weight: 700;
     font-size: 40px;
     color: #091e42;
-    width: auto;
-    height: 40px;
-    padding-left: 5rem;
   }
 
   .card-frame {
@@ -1263,7 +1242,7 @@ button.project-button:active {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     color: #344563;
   }
@@ -1277,11 +1256,8 @@ button.project-button:active {
 
   .seeSource {
     display: flex;
-    width: 65%;
-    margin-right: -12%;
-    justify-content: space-between;
-    align-content: flex-end;
-    padding-left: 8%;
+    align-items: flex-end;
+    width: 70%;
   }
 
   .card-tags1 {
@@ -1289,31 +1265,14 @@ button.project-button:active {
   }
 
   .see p {
-    height: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
     display: flex;
-    align-items: center;
     text-align: center;
     color: #396df2;
-    margin-top: 0.8rem;
-  }
-
-  .see1 {
-    width: 20px;
-    height: 20px;
-    background-image: url(imgs/Icon.png);
-    background-repeat: no-repeat;
-  }
-
-  .see2 {
-    width: 20px;
-    height: 20px;
-    background-image: url(imgs/githubVector.png);
-    background-repeat: no-repeat;
+    margin: auto;
+    gap: 8px;
   }
 
   .seeLive {

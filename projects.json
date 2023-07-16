@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Conference Project",
+    "description": "A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.",
+    "image": "Images/Conference_1.png",
+    "technologies": ["html", "css", "javaScript"],
+    "link": "https://mertkantaroglu.github.io/Capstone-Conference-Project/",
+    "content1": "A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.",
+    "content2": "A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.",
+    "tags1": ["HTML", "CSS", "JavaScript"],
+    "tags2": ["Frontend", "Full-stack Development", "Github"]
+  },
+  {
+    "name": "TV Show App",
+    "image": "Images/js project ss.png",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "link": "https://mertkantaroglu.github.io/JS-Capstone-Project/dist/index.html",
+    "content1": "A dynamic website displaying information about TV shows.",
+    "content2": "A dynamic website displaying information about TV shows.",
+    "tags1": ["HTML", "CSS", "JavaScript"],
+    "tags2": ["Frontend", "Full-stack Development", "Github"]
+  },
+  {
+    "name": "Crypto Market App",
+    "image": "Images/react project ss.png",
+    "technologies": ["HTML", "CSS", "JavaScript", "React"],
+    "link": "https://coin-market-app-project.netlify.app/",
+    "content1": " In this project you can see the current prices and details of cryptocoins.",
+    "content2": " In this project you can see the current prices and details of cryptocoins.",
+    "tags1": ["HTML", "CSS", "JavaScript", "React"],
+    "tags2": ["Frontend", "Full-stack Development", "Github"]
+  },
+  {
+    "name": "Uber Navigation",
+    "description": "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    "image": "Images/Snapshoot Portfolio (1).png",
+    "technologies": ["html", "Ruby on rails", "css", "javaScript"],
+    "link": "link_to_live_version.com",
+    "content1": "Lorem ipsum it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer ...",
+    "content2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus mollitia saepe maxime vitae nostrum repellat eligendi amet voluptas modi repudiandae necessitatibus animi harum obcaecati at omnis laboriosam sapiente eum rem velit molestias"
+  }
+]
