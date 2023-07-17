@@ -9,24 +9,22 @@ function openMobileMenu() {
   mobileMenu.style.display = 'flex';
 }
 
-hamburger.addEventListener('click', openMobileMenu);
+// hamburger.addEventListener('click', openMobileMenu);
 
-function closeMobileMenu() {
+function closeMobileMenu(event) {
+  const clickedElement = event.target;
+  const isMenuLink = clickedElement.closest('.menu-links');
+
+  if (isMenuLink) {
+    event.preventDefault(); // Prevent the default behavior of the anchor links
+  }
+
   mobileMenu.classList.add('hidden');
   mobileMenu.style.display = 'none';
 }
 
-menuLinks.addEventListener('click', closeMobileMenu);
+document.addEventListener('click', closeMobileMenu);
 closeIcon.addEventListener('click', closeMobileMenu);
-
-// Popup Cards //
-const modal = document.querySelector('.popup-window');
-const overlay = document.querySelector('.overlay');
-const openModalBtn1 = document.querySelector('.project-button1');
-const openModalBtn2 = document.querySelector('.project-button2');
-const openModalBtn3 = document.querySelector('.project-button3');
-const openModalBtn4 = document.querySelector('.project-button4');
-const closeModalBtn = document.querySelector('.closeIcon-popup');
 
 // Fetch Projects
 fetch("projects.json")
@@ -89,11 +87,3 @@ function downloadResume() {
   // Trigger the download by programmatically clicking the link
   link.dispatchEvent(new MouseEvent('click'));
 }
-
-// Closing Popup //
-const closeModal = function () {
-  modal.style.display = 'none';
-  overlay.classList.add('hidden');
-};
-
-closeModalBtn.addEventListener('click', closeModal);
