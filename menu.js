@@ -80,42 +80,15 @@ function renderProjects(projects) {
   });
 }
 
+// Download Resume //
+function downloadResume() {
+  const link = document.createElement('a');
+  link.href = 'https://drive.google.com/uc?export=download&id=1Sr_fK8T7N5rZINxF_YvloqzB-4inMiHk';
+  link.download = 'Mert_Kantaroglu_Resume.pdf';
 
-const popupsProjectImage = document.querySelector('.popup-img');
-const popupsProjectTitle = document.querySelector('.popups-proj-title');
-const popupsProjectDesktop = document.querySelector('.popups-project-p-desktop');
-const popupsProjectMobile = document.querySelector('.popups-project-p-mobile');
-const tagsUp = document.querySelectorAll('.card-tags-up');
-const tagsDown = document.querySelectorAll('.card-tags-down');
-
-function openModal(index) {
-  overlay.classList.remove('hidden');
-  modal.style.display = 'flex';
-
-  popupsProjectImage.src = projects[index].image;
-  popupsProjectTitle.innerHTML = projects[index].name;
-  popupsProjectDesktop.innerHTML = projects[index].content1;
-  popupsProjectMobile.innerHTML = projects[index].content2;
-  tagsUp.innerHTML = projects[index].tags1;
-  tagsDown.innerHTML = projects[index].tags2;
-  document.documentElement.scrollTop = 0;
+  // Trigger the download by programmatically clicking the link
+  link.dispatchEvent(new MouseEvent('click'));
 }
-
-openModalBtn1.addEventListener('click', function() {
-  openModal(0);
-});
-
-openModalBtn2.addEventListener('click', function() {
-  openModal(1);
-});
-
-openModalBtn3.addEventListener('click', function() {
-  openModal(2);
-});
-
-openModalBtn4.addEventListener('click', function() {
-  openModal(3);
-});
 
 // Closing Popup //
 const closeModal = function () {
@@ -124,12 +97,3 @@ const closeModal = function () {
 };
 
 closeModalBtn.addEventListener('click', closeModal);
-
-// Email Validation //
-document.getElementById('contact-form').onsubmit = (e) => {
-  const email = document.getElementById('email').value;
-  if (email !== email.toLowerCase()) {
-    e.preventDefault();
-    document.getElementById('error').innerHTML = 'Email must be in lowercase';
-  }
-};
