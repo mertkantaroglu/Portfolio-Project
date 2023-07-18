@@ -349,8 +349,7 @@ img {
   .hamburger {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 3em;
+    gap: 4rem;
     flex: 1;
     height: 3rem;
     align-items: center;
@@ -374,7 +373,7 @@ img {
   }
 
   .about-nav-link {
-    margin-left: 10px;
+    margin-left: 1.5rem;
   }
 
   .name {
