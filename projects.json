@@ -72,7 +72,7 @@
     "stack": "Full Stack",
     "year": 2023,
     "technologies": ["React", "Redux", "Ruby on Rails","PostgreSQL"],
-    "link": "link_to_live_version.com",
+    "link": "https://house-rental-project.netlify.app/",
     "github": "https://github.com/mertkantaroglu/house-rental-front-end",
     "content1": "",
     "content2":""
