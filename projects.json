@@ -8,10 +8,8 @@
     "technologies": ["HTML", "CSS", "JavaScript"],
     "link": "https://mertkantaroglu.github.io/Capstone-Conference-Project/",
     "github": "https://github.com/mertkantaroglu/Capstone-Conference-Project",
-    "content1": "A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.",
-    "content2": "A conference website for anime fans and comicon lovers. Built with HTML, CSS and JS.",
-    "tags1": ["HTML", "CSS", "JavaScript"],
-    "tags2": ["Frontend", "Full-stack Development", "Github"]
+    "content1": "",
+    "content2": ""
   },
   {
     "name": "TV Show App",
@@ -23,13 +21,23 @@
     "link": "https://mertkantaroglu.github.io/JS-Capstone-Project/dist/index.html",
     "github": "https://github.com/mertkantaroglu/JS-Capstone-Project",
     "content1": "A dynamic website displaying information about TV shows.",
-    "content2": "A dynamic website displaying information about TV shows.",
-    "tags1": ["HTML", "CSS", "JavaScript"],
-    "tags2": ["Frontend", "Full-stack Development", "Github"]
+    "content2": ""
+  },
+  {
+    "name": "Space Travelers Hub",
+    "description": "A web application that fetches data from SpaceX API and display rocket, mission and dragon details.",
+    "image": "Images/Space_travelers_hub.png",
+    "stack": "Front end",
+    "year": 2023,
+    "technologies": ["HTML", "CSS", "React","Redux"],
+    "link": "https://space-travellers-hub-project.netlify.app/",
+    "github": "https://github.com/mertkantaroglu/Space-Travellers-Hub",
+    "content1": "",
+    "content2":""
   },
   {
     "name": "Crypto Market App",
-    "description": "In this project you can see the current prices and details of cryptocoins.",
+    "description": "In this project the user can see the current prices and details of cryptocoins.",
     "image": "Images/react project ss.png",
     "stack": "Front end",
     "year": 2023,
@@ -37,37 +45,23 @@
     "link": "https://coin-market-app-project.netlify.app/",
     "github": "https://github.com/mertkantaroglu/Crypto-Market-App",
     "content1": " In this project you can see the current prices and details of cryptocoins.",
-    "content2": " In this project you can see the current prices and details of cryptocoins.",
-    "tags1": ["HTML", "CSS", "JavaScript", "React"],
-    "tags2": ["Frontend", "Full-stack Development", "Github"]
-  },
-  {
-    "name": "Recipe App",
-    "description": "A web application to create food, new recipes and shopping lists.",
-    "image": "Images/Recipe_app.png",
-    "stack": "Full Stack",
-    "year": 2023,
-    "technologies": ["HTML", "CSS", "Ruby on Rails","PostgreSQL"],
-    "link": "link_to_live_version.com",
-    "github": "https://github.com/mertkantaroglu/Recipe-App",
-    "content1": "",
-    "content2":""
+    "content2": " In this project you can see the current prices and details of cryptocoins."
   },
   {
     "name": "Budget Buddy",
     "description": "A web application to create categories, and track expenses for each category.",
-    "image": "Images/",
+    "image": "Images/Budget_buddy.png",
     "stack": "Full Stack",
     "year": 2023,
     "technologies": ["HTML", "CSS", "Ruby on Rails","PostgreSQL"],
-    "link": "link_to_live_version.com",
+    "link": "https://bugdet-buddy-jlgc.onrender.com/",
     "github": "https://github.com/mertkantaroglu/Recipe-App",
     "content1": "",
     "content2":""
   },
   {
     "name": "House Rental App",
-    "description": "A web application to add and reserve houses..",
+    "description": "A web application to add, delete and reserve houses.",
     "image": "Images/House_rental_app.png",
     "stack": "Full Stack",
     "year": 2023,
