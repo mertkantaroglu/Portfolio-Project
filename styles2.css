@@ -38,7 +38,7 @@ body {
 }
 
 .hamburger {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -58,11 +58,11 @@ body {
 }
 
 .name {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .name-title {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .intro-container {
@@ -71,9 +71,8 @@ body {
 }
 
 .title {
-  margin-bottom: 5%;
   text-align: center;
-  margin-top: 2rem;
+  margin: -2rem 0 2rem 0;
   animation: title 0.5s ease-in-out both;
 }
 
@@ -93,6 +92,7 @@ body {
 
 .intro a {
   text-decoration: none;
+  text-align: center;
 }
 
 .intro p {
@@ -142,11 +142,11 @@ body {
   transition: 500ms ease-in-out;
 }
 
-img {
+/* img {
   width: 94%;
   margin: 3%;
   border-radius: 8px;
-}
+} */
 
 .cards {
   display: flex;
@@ -359,7 +359,7 @@ img {
   font-weight: bold;
 }
 
-.mobile-menu {
+/* .mobile-menu {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -370,10 +370,11 @@ img {
   display: flex;
   height: 105vh;
   margin: -4% 0 0;
-}
+} */
 
 .mobile-menu-links {
-  text-decoration: none;
+  display: none;
+  /* text-decoration: none;
   padding-left: 2.5rem;
   margin-top: 10%;
   width: 100%;
@@ -382,17 +383,8 @@ img {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  display: flex;
   align-items: center;
-  color: #fff;
-}
-
-.cancel-icon {
-  display: block;
-  font-size: 30px;
-  margin: 10% 10% auto auto;
-  cursor: pointer;
-  width: auto;
+  color: #fff; */
 }
 
 @media (min-width: 768px) {
@@ -454,7 +446,7 @@ img {
   .intro-container {
     margin: 0 10%;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem 2rem;
   }
 
   .intro a {
@@ -466,7 +458,7 @@ img {
   .intro p {
     width: 60%;
     margin: 1rem auto 2rem;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .social-media-icons, .end-social-media-icons {
