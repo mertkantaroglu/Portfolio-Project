@@ -1,13 +1,13 @@
 // Mobile menu //
 const mobileMenu = document.querySelector('.mobile-menu');
-const hamburger = document.querySelector('.hamburger');
-const menuLinks = document.querySelector('.menu-links');
+// const hamburger = document.querySelector('.hamburger');
+// const menuLinks = document.querySelector('.menu-links');
 const closeIcon = document.querySelector('.cancel-icon');
 
-function openMobileMenu() {
-  mobileMenu.classList.remove('hidden');
-  mobileMenu.style.display = 'flex';
-}
+// function openMobileMenu() {
+//   mobileMenu.classList.remove('hidden');
+//   mobileMenu.style.display = 'flex';
+// }
 
 // hamburger.addEventListener('click', openMobileMenu);
 
@@ -26,15 +26,9 @@ function closeMobileMenu(event) {
 document.addEventListener('click', closeMobileMenu);
 closeIcon.addEventListener('click', closeMobileMenu);
 
-// Fetch Projects
-fetch("projects.json")
-  .then(response => response.json())
-  .then(data => renderProjects(data))
-  .catch(error => console.error(error));
-
 // Render Projects
 function renderProjects(projects) {
-  const projectsContainer = document.querySelector(".projects-container");
+  const projectsContainer = document.querySelector('.projects-container');
 
   projects.forEach((project, index) => {
     const projectCard = `
@@ -56,8 +50,8 @@ function renderProjects(projects) {
             <div class="project-button-below">
               <ul class="dev-list">
                 ${project.technologies
-                  .map(tech => `<li><h3 class="html">${tech}</h3></li>`)
-                  .join("")}
+    .map((tech) => `<li><h3 class="html">${tech}</h3></li>`)
+    .join('')}
               </ul>
               <div class="button-list">
                 <button class="project-button1 project-button" type="submit">
@@ -77,6 +71,13 @@ function renderProjects(projects) {
     projectsContainer.innerHTML += projectCard;
   });
 }
+
+// Fetch Projects
+fetch('projects.json')
+  .then((response) => response.json())
+  .then((data) => renderProjects(data));
+
+/* eslint-disable no-unused-vars */
 
 // Download Resume //
 function downloadResume() {

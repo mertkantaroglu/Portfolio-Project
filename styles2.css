@@ -72,7 +72,7 @@ body {
 
 .title {
   text-align: center;
-  margin: -2rem 0 2rem 0;
+  margin: -2rem 0 2rem;
   animation: title 0.5s ease-in-out both;
 }
 
@@ -80,6 +80,7 @@ body {
   0% {
     transform: scale(0.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -173,11 +174,12 @@ body {
 @keyframes projects-hover {
   0% {
     transform: translateZ(0);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgb(0 0 0 / 0%);
   }
+
   100% {
     transform: translateZ(50px);
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 35%);
   }
 }
 
@@ -275,11 +277,10 @@ body {
   margin: 5% 0;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items: flex-start;
   width: 100%;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem 1rem 2rem;
 }
 
 .lang-container-title {
@@ -374,6 +375,7 @@ body {
 
 .mobile-menu-links {
   display: none;
+
   /* text-decoration: none;
   padding-left: 2.5rem;
   margin-top: 10%;
@@ -387,7 +389,7 @@ body {
   color: #fff; */
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .header {
     display: flex;
     flex-direction: row-reverse;
@@ -489,7 +491,7 @@ body {
   }
 
   .project-info {
-    margin: 2% 4% 4% 4%;
+    margin: 2% 4% 4%;
   }
 
   .project-summary, .project-details {
@@ -550,8 +552,8 @@ body {
   }
 }
 
-@media (min-width: 1280px) {
-  works {
+@media (width >= 1280px) {
+  .works {
     display: flex;
     width: 95%;
     margin: auto;
@@ -568,6 +570,6 @@ body {
 
   .cards {
     width: 30%;
-    margin: 2% 1% 1% 1%;
+    margin: 2% 1% 1%;
   }
 }
