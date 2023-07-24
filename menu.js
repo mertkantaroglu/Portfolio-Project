@@ -82,7 +82,7 @@ fetch('projects.json')
 // Download Resume //
 function downloadResume() {
   const link = document.createElement('a');
-  link.href = 'https://drive.google.com/uc?export=download&id=1Sr_fK8T7N5rZINxF_YvloqzB-4inMiHk';
+  link.href = 'https://drive.google.com/uc?export=download&id=1DJMTAjhDud_bHAfazaN51IUhJoGe4cNT';
   link.download = 'Mert_Kantaroglu_Resume.pdf';
 
   // Trigger the download by programmatically clicking the link
