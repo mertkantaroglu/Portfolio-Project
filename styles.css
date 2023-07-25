@@ -69,14 +69,6 @@ body {
   flex-direction: column;
 }
 
-/* .navbar {
-  display: block;
-  width: 18px;
-  height: 3px;
-  margin: 3px;
-  background-color: whitesmoke;
-} */
-
 .nav-links {
   text-decoration: none;
   visibility: visible;
@@ -119,7 +111,7 @@ body {
 .title {
   text-align: center;
   animation: title 0.5s ease-in-out both;
-  margin: 0 5%;
+  margin: 5% 5% 0;
 }
 
 @keyframes title {
@@ -147,7 +139,7 @@ body {
   color: #dbdbdb;
 }
 
-.intro p {
+.about-section {
   margin-bottom: 2rem;
 }
 
@@ -194,6 +186,19 @@ body {
   transition: 500ms ease-in-out;
 }
 
+.about-section {
+  animation: about-slide 0.5s linear both;
+}
+
+@keyframes about-slide {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .about-title, .skills-title, .projects-title {
   font-size: 24px;
   text-align: center;
@@ -213,6 +218,16 @@ body {
   gap: 1rem;
   margin: 4rem auto 2rem;
   justify-content: center;
+  animation: skills-slide 0.5s linear both;
+}
+
+@keyframes skills-slide {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .skills-list {
@@ -336,16 +351,6 @@ body {
   transition: 500ms ease-in-out;
 }
 
-.about-section {
-  margin-top: 1rem;
-}
-
-.about-detail {
-  width: 65%;
-  margin: auto;
-  font-size: 18px;
-}
-
 .end-social-media-icons {
   justify-content: center;
 }
@@ -430,7 +435,7 @@ body {
 .contact-title {
   text-align: center;
   margin: 3rem 0 1rem;
-  font-size: 28px;
+  font-size: 36px;
 }
 
 .contact-info {
@@ -448,43 +453,18 @@ body {
   font-weight: bold;
 }
 
-/* .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #959fff;
-  position: fixed;
-  z-index: 1;
-  margin-top: -2%;
-  display: flex;
-  height: 105vh;
-  margin: -4% 0 0;
-} */
-
-.mobile-menu-links {
+.mobile-menu-cancel {
   display: none;
-
-  /* text-decoration: none;
-  padding-left: 2.5rem;
-  margin-top: 10%;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  align-items: center;
-  color: #fff; */
 }
 
-.mobile-menu-cancel {
+.menu-links {
   display: none;
 }
 
 footer {
   text-align: center;
   margin: 1rem auto;
-  font-size: 14px;
+  font-size: 18px;
   width: 80%;
 }
 
@@ -515,10 +495,6 @@ footer {
     height: 4rem;
     margin: 0 4% 0 6%;
   }
-
-  /* .navbar {
-    visibility: hidden;
-  } */
 
   .nav-links {
     text-decoration: none;
@@ -557,6 +533,7 @@ footer {
 
   .intro {
     flex: 50%;
+    margin: 0;
   }
 
   .intro-container {
@@ -572,9 +549,9 @@ footer {
     height: 3rem;
   }
 
-  .intro p {
-    width: 90%;
-    margin: 2rem auto;
+  .about-section {
+    width: 85%;
+    margin: 3rem auto;
     font-size: 20px;
     text-align: start;
   }
@@ -608,9 +585,13 @@ footer {
     margin-bottom: 1rem;
   }
 
+  .contact-title {
+    font-size: 42px;
+  }
+
   .connect-btns {
     justify-content: flex-start;
-    margin-left: 5%;
+    margin-left: 7%;
   }
 
   .skills-container {
@@ -671,10 +652,6 @@ footer {
 
   .project-button {
     font-size: 16px;
-  }
-
-  .about-section {
-    margin-top: 1rem;
   }
 
   .resume-button {
