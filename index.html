@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Mert's Portfolio</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles.css">
 
     <link
       rel="stylesheet"
@@ -31,104 +31,134 @@
     </section>
 
       <header class="header">
-
-        <div class="logos">
-        <ul class="header-social-media-icons">
-          <li>
-            <a href="https://github.com/mertkantaroglu" target="_blank" rel="noopener">
-              <i class="fa-brands fa-github fa-lg"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/mert-kantaroglu/" target="_blank" rel="noopener">
-              <i class="fa-brands fa-linkedin fa-lg"></i></a>
-          </li>
-          <li>
-            <a href="mailto:mertkantaroglu@gmail.com" target="_blank">
-              <i class="fa-regular fa-envelope fa-lg"></i></a>
-          </li>
-        </ul>
-      </div>
         <nav class="hamburger">
-          <span class="navbar"><a href="#intro" class="nav-links about-nav-link">Home</a></span>
-          <span class="navbar"><a href="#Portfolio" class="nav-links">Projects</a></span>
-          <span class="navbar"><a href="#Contact" class="nav-links">Contact</a></span>
+          <div>
+            <div class="name-logo">MK</div>
+          </div>
+          <div class="navbar-links">
+            <span class="navbar"><a href="#intro" class="nav-links about-nav-link">Home</a></span>
+            <span class="navbar"><a href="#Portfolio" class="nav-links">Projects</a></span>
+            <span class="navbar"><a href="#Contact" class="nav-links">Contact</a></span>
+          </div>
         </nav>
       </header>
 
       <div class="intro-container" id="intro">
         <div class="title">
-          <h1><span class="name">Mert Kantaroglu</span>
+          <p>Hi there!</p>
+          <h1>I am <span class="name">Mert Kantaroglu</span>.
           </h1>
-          <p class="name-title">Full-stack Web Developer</p>
+          <p class="name-title">I develop efficient, scalable and user-friendly web applications.</p>
+          <div class="social-logos">
+            <ul class="header-social-media-icons">
+              <li>
+                <a href="https://github.com/mertkantaroglu" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github fa-lg"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/mert-kantaroglu/" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-linkedin fa-lg"></i></a>
+              </li>
+              <li>
+                <a href="mailto:mertkantaroglu@gmail.com" target="_blank">
+                  <i class="fa-regular fa-envelope fa-lg"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="intro">
-          <p>
-            I'm a full-stack web developer! I build clean, efficient, and user-friendly projects with JS, React, Ruby on Rails & PostgreSQL from scratch. <br><br>
-            I can help you build a product, feature, or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
-          </p>
-          <div class="connect-btns">
-            <a class="connect-btn" href="#Contact">Get In Touch</a>
-            <button class="resume-button" type="button" onclick="downloadResume()">
-            Get My Resume <i class="fas fa-angle-double-down"></i>
-          </button>
-        </div>
+        <div class="photo">
+          <img src="Images/headshot.jpeg" alt="photo" />
         </div>
       </div>
+        <div class="about-skills-container">
+          <div class="intro about-container">
+            <div class="about-title titles">
+              <h2>About Me</h2>
+            </div>
+            <p class="about-section">
+                I am a full-stack web developer. I specialize in building clean, efficient, and user-friendly projects using JS, React, Ruby on Rails, and PostgreSQL. My background in Sales & Operations hones my communication, critical thinking, problem-solving, and time management skills. With a dedication to continuous learning, I stay updated with the latest technologies to provide effective solutions with great attention to detail.
+              <br><br>
+                Whether you need help building a product, a feature, or a website, I'm here to assist. Feel free to explore some of my work and experience, and if you like what you see, don't hesitate to reach out for your coding needs. Together, we can create something exceptional.
+            </p>
+            <div class="connect-btns">
+              <a class="connect-btn" href="#Contact">Get In Touch</a>
+                <button class="resume-button" type="button" onclick="downloadResume()">
+                Get My Resume <i class="fas fa-angle-double-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="skills-container">
+            <div class="skills-title titles">
+              <h2>Skills</h2>
+            </div>
+            <div class="skills-list">
+              <div class="skill-logos">
+                <img src="Images/html.svg" alt="html" class="logo" /><p>HTML</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/css3.svg" alt="css" class="logo" /><p>CSS</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/javascript.svg" alt="js" class="logo" /><p>JavaScript</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/ruby.svg" alt="ruby" class="logo" /><p>Ruby</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/react.svg" alt="react" class="logo" /><p>React</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/rails.svg" alt="rails" class="logo" /><p>Ruby on Rails</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/postgresql.svg" alt="postgresql" class="logo" /><p>PostgreSQL</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/redux.svg" alt="redux" class="logo" /><p>Redux</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/git.svg" alt="git" class="logo" /><p>Git</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/github.svg" alt="github" class="logo" /><p>GitHub</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/jest JS.svg" alt="jest" class="logo" /><p>Jest</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/rspec.svg" alt="rspec" class="logo" /><p>RSpec</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/bootstrap.svg" alt="bootstrap" class="logo" /><p>Bootstrap</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/node-js.svg" alt="node" class="logo" /><p>Node JS</p>
+              </div>
+              <div class="skill-logos">
+                <img src="Images/npm.svg" alt="npm" class="logo" /><p>NPM</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
     <div class="overlay hidden"></div>
 
     <!-- Works Section -->
     <section class="works" id="Portfolio">
-      <h2 class="projects-title">Projects</h2>
+      <div class="projects-title titles">
+        <h2>Projects</h2>
+      </div>
       <div class="projects-container">
-    </div>
-    </section>
-
-    <!-- About Myself Section -->
-    <section class="about-section" id="About">
-      <div class="language-container">
-        <h2 class="lang-container-title">Languages and Tools</h2>
-        <div class="languages">
-          <h3 class="lang-title">Languages</h3>
-            <div class="lang-list">
-              <div class="lang"><p class="lang-list-item">HTML</p></div>
-              <div class="lang"><p class="lang-list-item">CSS</p></div>
-              <div class="lang"><p class="lang-list-item">Javascript</p></div>
-              <div class="lang"><p class="lang-list-item">Ruby</p></div>
-            </div>
-          </div>
-          <div class="frameworks">
-            <h3 class="fw-title">Frameworks</h3>
-          <div class="fw-list">
-            <div class="framework"><p class="fw-list-item">React</p></div>
-            <div class="framework"><p class="fw-list-item">Ruby on Rails</p></div>
-            <div class="framework"><p class="fw-list-item">Bootstrap</p></div>
-          </div>
-        </div>
-          <div class="skills"><h3 class="skills-title">Skills</h3>
-          <div class="skills-list">
-            <div class="skill"><p class="skills-list-item">PostgreSQL</p></div>
-            <div class="skill"><p class="skills-list-item">Git</p></div>
-            <div class="skill"><p class="skills-list-item">GitHub</p></div>
-            <div class="skill"><p class="skills-list-item">Jest</p></div>
-            <div class="skill"><p class="skills-list-item">RSpec</p></div>
-          </div>
-        </div>
-          <div class="soft-skills"><h3 class="soft-skills-title">Soft Skills</h3>
-          <div class="soft-skills-list">
-            <div class="soft-skill"><p class="soft-skills-list-item">Pair-programming</p></div>
-            <div class="soft-skill"><p class="soft-skills-list-item">Remote Programming</p></div>
-            <div class="soft-skill"><p-item class="soft-skills-list-item">Teamwork</p-item></div>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- Contact-Form -->
     <section class="contact-form form-group" id="Contact">
-      <h2 class="contact-title">Contact Me</h2>
+      <div>
+        <h2 class="contact-title titles">Contact Me</h2>
+      </div>
       <p class="contact-info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it!</p>
-      <p class="contact-info">Contact me via</p>
+      <!-- <p class="contact-info">Contact me via</p> -->
           <div class="social-media">
             <ul class="end-social-media-icons">
               <li>
@@ -154,6 +184,10 @@
             </ul>
           </div>
     </section>
+    <hr>
+    <footer>
+      <h3>Created by <span class="footer-name">Mert Kantaroglu</span></h3>
+    </footer>
     <script src="menu.js"></script>
     <script src="https://kit.fontawesome.com/69940923dd.js" crossorigin="anonymous"></script>
   </body>
