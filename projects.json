@@ -13,15 +13,13 @@
   },
   {
     "name": "TV Show App",
-    "description": "A dynamic website displaying information about TV shows.",
+    "description": "A dynamic front-end website for TV shows information, enabling users to explore their favorite series.",
     "image": "Images/js project ss.png",
     "stack": "Front end",
     "year": 2023,
     "technologies": ["HTML", "CSS", "JavaScript"],
     "link": "https://mertkantaroglu.github.io/JS-Capstone-Project/dist/index.html",
-    "github": "https://github.com/mertkantaroglu/JS-Capstone-Project",
-    "content1": "A dynamic website displaying information about TV shows.",
-    "content2": ""
+    "github": "https://github.com/mertkantaroglu/JS-Capstone-Project"
   },
   {
     "name": "Space Travelers Hub",
@@ -31,44 +29,36 @@
     "year": 2023,
     "technologies": ["HTML", "CSS", "React","Redux"],
     "link": "https://space-travellers-hub-project.netlify.app/",
-    "github": "https://github.com/mertkantaroglu/Space-Travellers-Hub",
-    "content1": "",
-    "content2":""
+    "github": "https://github.com/mertkantaroglu/Space-Travellers-Hub"
   },
   {
     "name": "Crypto Market App",
-    "description": "In this project the user can see the current prices and details of cryptocoins.",
+    "description": "A scalable front-end application providing real-time tracking of cryptocurrency prices and essential information.",
     "image": "Images/react project ss.png",
     "stack": "Front end",
     "year": 2023,
     "technologies": ["HTML", "CSS", "JavaScript", "React"],
     "link": "https://coin-market-app-project.netlify.app/",
-    "github": "https://github.com/mertkantaroglu/Crypto-Market-App",
-    "content1": " In this project you can see the current prices and details of cryptocoins.",
-    "content2": " In this project you can see the current prices and details of cryptocoins."
+    "github": "https://github.com/mertkantaroglu/Crypto-Market-App"
   },
   {
     "name": "Budget Buddy",
-    "description": "A web application to create categories, and track expenses for each category.",
+    "description": "A robust full-stack app enabling users to create categories and efficiently track their expenses.",
     "image": "Images/Budget_buddy.png",
     "stack": "Full Stack",
     "year": 2023,
     "technologies": ["HTML", "CSS", "Ruby on Rails","PostgreSQL"],
     "link": "https://bugdet-buddy-jlgc.onrender.com/",
-    "github": "https://github.com/mertkantaroglu/Recipe-App",
-    "content1": "",
-    "content2":""
+    "github": "https://github.com/mertkantaroglu/Budget-Buddy"
   },
   {
     "name": "House Rental App",
-    "description": "A web application to add, delete and reserve houses.",
+    "description": "A full-stack app that allows users to signup, see a list of houses, and reserve or manage reservations.",
     "image": "Images/House_rental_app.png",
     "stack": "Full Stack",
     "year": 2023,
     "technologies": ["React", "Redux", "Ruby on Rails","PostgreSQL"],
     "link": "https://house-rental-project.netlify.app/",
-    "github": "https://github.com/mertkantaroglu/house-rental-front-end",
-    "content1": "",
-    "content2":""
+    "github": "https://github.com/mertkantaroglu/house-rental-front-end"
   }
 ]
