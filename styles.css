@@ -394,20 +394,6 @@ body {
   padding-left: 3rem;
 }
 
-.lang-list-item, .framework, .skill, .soft-skill {
-  border: 1px solid white;
-  width: fit-content;
-  border-radius: 12px;
-  padding: 5px 10px;
-  margin: 0.5rem 0;
-}
-
-.lang-list-item:hover {
-  background-color: whitesmoke;
-  color: #6070ff;
-  transition: 500ms ease-in-out;
-}
-
 .framework:hover, .framework:hover .fw-list-item {
   background-color: whitesmoke;
   color: #6070ff;
