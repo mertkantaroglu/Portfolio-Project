@@ -157,32 +157,48 @@
       <div>
         <h2 class="contact-title titles">Contact Me</h2>
       </div>
-      <p class="contact-info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it!</p>
-      <!-- <p class="contact-info">Contact me via</p> -->
-          <div class="social-media">
-            <ul class="end-social-media-icons">
-              <li>
-                <a href="https://github.com/mertkantaroglu" target="_blank" rel="noopener">
-                  <i class="fa-brands fa-github fa-lg"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/mert-kantaroglu/" target="_blank" rel="noopener">
-                  <i class="fa-brands fa-linkedin fa-lg"></i></a>
-              </li>
-              <li>
-                <a href="https://wellfound.com/u/mert-kantaroglu" target="_blank" rel="noopener">
-                  <i class="fa-brands fa-angellist fa-lg"></i></a>
-              </li>
-              <li>
-                <a href="https://medium.com/@mertkantaroglu" target="_blank" rel="noopener">
-                  <i class="fa-brands fa-medium fa-lg"></i></a>
-              </li>
-              <li>
-                <a href="mailto:mertkantaroglu@gmail.com" target="_blank">
-                  <i class="fa-regular fa-envelope fa-lg"></i></a>
-              </li>
-            </ul>
+      <div class="contact-parts">
+        <div class="contact-info-part">
+          <p class="contact-info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding I'd love to help with it! <br>
+            Contact me via socials or shoot me a message!</p>
+          <div class="contact-social-icons">
+              <ul class="end-social-media-icons">
+                <li>
+                  <a href="https://github.com/mertkantaroglu" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/mert-kantaroglu/" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="https://wellfound.com/u/mert-kantaroglu" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-angellist fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@mertkantaroglu" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-medium fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="mailto:mertkantaroglu@gmail.com" target="_blank">
+                    <i class="fa-regular fa-envelope fa-lg"></i></a>
+                </li>
+              </ul>
           </div>
+        </div>
+        <fieldset class="fieldset">
+          <form action="https://formspree.io/f/xaykrzrn" method="post" id="contact-form">
+            <ul>
+              <li><input type="text" class="form-input" name="name" placeholder="Your Name" maxlength="30" required></li>
+              <li><input type="email" id="email" class="form-input" name="email" placeholder="Your Email" required></li>
+              <li><textarea class="form-input" id="text-area" name="text-area" placeholder="Write your message here" maxlength="500" required></textarea></li>
+              <div class="contact-button-div">
+                <button class="contact-btn" type="submit" name="button">Send Message</button>
+              </div>
+            </ul>
+          </form>
+        </fieldset>
+      </div>
     </section>
     <hr>
     <footer>
